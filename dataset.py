@@ -81,7 +81,6 @@ class Dateset():
         list_sequence = random.sample(range(0,len(dict_data["x"])),size)
         list_x = [dict_data["x"][i] for i in list_sequence]
         list_y = [dict_data["y"][i] for i in list_sequence]
-        print(list_sequence)
         return list_x,list_y
 
 
