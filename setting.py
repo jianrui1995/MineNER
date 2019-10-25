@@ -14,3 +14,15 @@ TRAIN_DATA = 2
 # word2vec词向量模型路径
 WORD2VEC_PATH = "model/word2vec/word2voc_char_size300_iter140.model"
 
+# 隐藏层神经元个数
+HIDDEN_SIZE = 300
+
+# drop 的 input保留率：
+DROP_INPUT_KEEP = 0.5
+
+# 隐藏层层数
+NUM_LAYER = 2
+
+#标签数目
+TAG_NUM = 11
+
