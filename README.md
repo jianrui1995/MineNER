@@ -1,1 +1,1 @@
-# NERByLstmAndCrf
+# MineNER
