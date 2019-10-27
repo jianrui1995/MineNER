@@ -3,7 +3,13 @@ import setting
 
 class model():
     def __init__(self):
-        pass
+        # 导入占位符和变量的过程：
+        self.creat_placeholders()
+        self.creat_variable()
+        # 创建指数平滑
+        self.ema = self.ema()
+        self.loss = self.predict()
+        self.train_op = self.optimize()
 
     def creat_placeholders(self):
         self.x = tf.placeholder(
@@ -32,17 +38,17 @@ class model():
             name="b",
             shape=[1, setting.TAG_NUM]
         )
-        pass
+        self.global_step = tf.get_variable(
+            0,
+            trainable=False
+        )
+
 
     def predict(self):
         '''
         向前传播过程
         :return:
         '''
-        # 导入占位符和变量的过程：
-        self.creat_placeholders()
-        self.creat_variable()
-
         # Bi_LSTM过程：
         x = tf.nn.dropout(self.x,setting.DROP_INPUT_KEEP)
         lstm_b = [tf.nn.rnn_cell.DropoutWrapper(tf.nn.rnn_cell.LSTMCell(setting.HIDDEN_SIZE),setting.DROP_INPUT_KEEP) for _ in range(setting.NUM_LAYER)]
@@ -51,17 +57,16 @@ class model():
             cell_fw=lstm_f,
             cell_bw=lstm_b,
             inputs=x,
-            sequence_length=[], #在开始之前就要设置的量，目前还没用弄。
+            sequence_length=self.seqence_length,
             dtype=tf.float32
         )
         output = tf.concat(output_f,output_b)
         output = tf.nn.dropout(output,setting.DROP_INPUT_KEEP) # 3维的张量。
         s = tf.shape(output)
-
         output = tf.reshape(output,shape=[-1,2*setting.HIDDEN_SIZE])
-            # 全连接层
-        output = tf.matmul(output,self.w)+self.b
 
+        # 全连接层
+        output = tf.matmul(output,self.w)+self.b
         output = tf.reshape(output,[-1,s[1],setting.TAG_NUM])
 
         # CRF过程：
@@ -72,4 +77,27 @@ class model():
         )
 
         # 损失
-        self.loss = -tf.reduce_mean(log_likelihood)
+        loss = -tf.reduce_mean(log_likelihood)
+
+        return loss
+
+    def ema(self):
+        '''
+        指数平滑
+        :return:
+        '''
+        ema = tf.train.ExponentialMovingAverage(setting.EMA_RATE,self.global_step)
+        return ema
+
+    def optimize(self):
+        '''
+        定义反向传播
+        :return:
+        '''
+        learn_rate = tf.train.exponential_decay(setting.LEARN_RATE,self.global_step,setting.LR_DECAY_STEP,setting.LR_DECAY)
+
+        optimizer = tf.train.AdamOptimizer(learn_rate).minimize(self.loss,self.global_step)
+        ave_op = self.ema.apply(tf.trainable_variables())
+        with tf.control_dependencies([optimizer, ave_op]):
+            train_op = tf.no_op('train')
+        return train_op

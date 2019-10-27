@@ -70,7 +70,7 @@ class Dateset():
         '''
         用于抽取size大小的数据，作为模型输入。
         :param size: 抽取的数据大小。
-        :param type: 抽取的数据集类型： 1：测试集   2：测试集
+        :param type: 抽取的数据集类型： 1：训练集   2：测试集
         :return: 返回数据集和结果元祖。
         '''
         if type == 1 :
@@ -79,6 +79,7 @@ class Dateset():
             dict_data = self.pos_train
 
         list_sequence = random.sample(range(0,len(dict_data["x"])),size)
+        print(list_sequence)
         list_x = [dict_data["x"][i] for i in list_sequence]
         list_y = [dict_data["y"][i] for i in list_sequence]
         return list_x,list_y

@@ -26,3 +26,17 @@ NUM_LAYER = 2
 #标签数目
 TAG_NUM = 11
 
+#词向量空间大小
+VEC_NUM = 300
+
+#指数平滑衰减率：
+EMA_RATE = 0.99
+
+# 学习率
+LEARN_RATE = 0.0001
+
+# 学习率衰减
+LR_DECAY = 0.99
+
+# 衰减频率
+LR_DECAY_STEP = 1000
