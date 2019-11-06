@@ -4,7 +4,7 @@ POS_TEST = "Data/pos/test.json"
 POS_TRAIN = "Data/pos/train.json"
 
 # 提取一次训练集的大小。
-BATCH_SIZE = 100
+BATCH_SIZE = 25
 
 # 获取的数据来源于训练集
 TEST_DATA = 1
@@ -40,3 +40,15 @@ LR_DECAY = 0.99
 
 # 衰减频率
 LR_DECAY_STEP = 1000
+
+#训练次数
+TRAIN_TIMES =10000
+
+#训练多少次之后，显示结果
+SHOW_STEP = 10
+
+#模型保存位置：
+CKPT_PATH = "model/CKPT/BiLSTM_CRF/BiLSTM_CRF/"
+
+#模型名称
+MODEL_NAME = "model"

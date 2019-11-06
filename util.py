@@ -11,12 +11,14 @@ class util():
     def word2vec(self,x,y):
         length = []
         maxlen = max(map(len,x))
-        data = np.zeros([len(x),maxlen,setting.VEC_NUM],np.float32)
+        data_x = np.zeros([len(x),maxlen,setting.VEC_NUM],np.float32)
+        data_y = np.zeros([len(y),maxlen],np.int32)
         for i in range(len(x)):
             length.append(len(x[i]))
             vec = [self.word2vecmodel[char] if char in self.word2vecmodel else self.unknow for char in x[i]]
-            data[i,:len(x[i])] = vec
-        return data,np.array(y),np.array(length)
+            data_x[i,:len(x[i])] = vec
+            data_y[i,:len(y[i])] = y[i]
+        return data_x,data_y,np.array(length)
 
     def test(self,word):
         if word not in self.word2vecmodel:

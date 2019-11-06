@@ -79,7 +79,6 @@ class Dateset():
             dict_data = self.pos_train
 
         list_sequence = random.sample(range(0,len(dict_data["x"])),size)
-        print(list_sequence)
         list_x = [dict_data["x"][i] for i in list_sequence]
         list_y = [dict_data["y"][i] for i in list_sequence]
         return list_x,list_y
@@ -90,4 +89,4 @@ if __name__=="__main__":
     # D.readorifile("Data/ori/subtask1_training_part1.txt","train.json")
     # D.readorifile("Data/ori/subtask1_training_part2.txt","test.json")
     data = D.getdata(setting.TEST_DATA)
-    print(data)
+    # print(data)
