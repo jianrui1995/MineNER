@@ -1,8 +1,5 @@
 import os
-import BiLSTM_CRF
-import dataset
-import util
-import setting
+from BiLSTM_CRF import BiLSTM_CRF, dataset, setting, util
 import tensorflow as tf
 os.environ['CUDA_VISIBLE_DEVICES'] = ''
 

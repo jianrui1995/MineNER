@@ -1,6 +1,5 @@
 import gensim
-import setting
-import dataset
+from BiLSTM_CRF import dataset, setting
 import numpy as np
 
 class util():
@@ -11,7 +10,7 @@ class util():
     def word2vec(self,x,y):
         length = []
         maxlen = max(map(len,x))
-        data_x = np.zeros([len(x),maxlen,setting.VEC_NUM],np.float32)
+        data_x = np.zeros([len(x), maxlen, setting.VEC_NUM], np.float32)
         data_y = np.zeros([len(y),maxlen],np.int32)
         for i in range(len(x)):
             length.append(len(x[i]))

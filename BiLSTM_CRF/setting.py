@@ -1,7 +1,7 @@
 
 # 源数据路径
-POS_TEST = "Data/pos/test.json"
-POS_TRAIN = "Data/pos/train.json"
+POS_TEST = "Data/CCKS2019_subtask1/pos/test.json"
+POS_TRAIN = "Data/CCKS2019_subtask1/pos/train.json"
 
 # 提取一次训练集的大小。
 BATCH_SIZE = 25
@@ -12,7 +12,7 @@ TEST_DATA = 1
 TRAIN_DATA = 2
 
 # word2vec词向量模型路径
-WORD2VEC_PATH = "model/word2vec/word2voc_char_size300_iter140.model"
+WORD2VEC_PATH = "../model/word2vec/word2voc_char_size300_iter140.model"
 
 # 隐藏层神经元个数
 HIDDEN_SIZE = 300

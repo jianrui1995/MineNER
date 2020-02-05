@@ -1,5 +1,5 @@
 import json
-import setting
+from BiLSTM_CRF import setting
 import random
 
 class Dateset():
@@ -27,9 +27,9 @@ class Dateset():
             "药物":"mad",
             "实验室检验":"SYche"
         }
-        f_test = open(setting.POS_TEST,"r",encoding="utf8")
+        f_test = open(setting.POS_TEST, "r", encoding="utf8")
         self.pos_test = json.load(f_test)
-        f_train = open(setting.POS_TRAIN,"r",encoding="utf8")
+        f_train = open(setting.POS_TRAIN, "r", encoding="utf8")
         self.pos_train = json.load(f_train)
 
     def readorifile(self,path,type):

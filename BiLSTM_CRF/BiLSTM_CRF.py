@@ -1,7 +1,5 @@
 import tensorflow as tf
-import setting
-import util
-import dataset
+from BiLSTM_CRF import dataset, setting, util
 
 
 class model():
@@ -18,7 +16,7 @@ class model():
     def creat_placeholders(self):
         self.x = tf.placeholder(
             dtype=tf.float32,
-            shape=[None,None,setting.VEC_NUM],
+            shape=[None, None, setting.VEC_NUM],
             name="x"
         )
         self.y = tf.placeholder(
@@ -51,9 +49,11 @@ class model():
         :return:
         '''
         # Bi_LSTM过程：
-        x = tf.nn.dropout(self.x,setting.DROP_INPUT_KEEP)
-        lstm_b = tf.nn.rnn_cell.MultiRNNCell([tf.nn.rnn_cell.DropoutWrapper(tf.nn.rnn_cell.LSTMCell(setting.HIDDEN_SIZE),setting.DROP_INPUT_KEEP) for _ in range(setting.NUM_LAYER)])
-        lstm_f = tf.nn.rnn_cell.MultiRNNCell([tf.nn.rnn_cell.DropoutWrapper(tf.nn.rnn_cell.LSTMCell(setting.HIDDEN_SIZE),setting.DROP_INPUT_KEEP) for _ in range(setting.NUM_LAYER)])
+        x = tf.nn.dropout(self.x, setting.DROP_INPUT_KEEP)
+        lstm_b = tf.nn.rnn_cell.MultiRNNCell([tf.nn.rnn_cell.DropoutWrapper(tf.nn.rnn_cell.LSTMCell(
+            setting.HIDDEN_SIZE), setting.DROP_INPUT_KEEP) for _ in range(setting.NUM_LAYER)])
+        lstm_f = tf.nn.rnn_cell.MultiRNNCell([tf.nn.rnn_cell.DropoutWrapper(tf.nn.rnn_cell.LSTMCell(
+            setting.HIDDEN_SIZE), setting.DROP_INPUT_KEEP) for _ in range(setting.NUM_LAYER)])
         (output_f,output_b) ,_= tf.nn.bidirectional_dynamic_rnn(
             cell_fw=lstm_f,
             cell_bw=lstm_b,
@@ -62,13 +62,13 @@ class model():
             dtype=tf.float32
         )
         output = tf.concat([output_f,output_b],axis=-1)
-        output = tf.nn.dropout(output,setting.DROP_INPUT_KEEP) # 3维的张量。
+        output = tf.nn.dropout(output, setting.DROP_INPUT_KEEP) # 3维的张量。
         s = tf.shape(output)
-        output = tf.reshape(output,shape=[-1,2*setting.HIDDEN_SIZE])
+        output = tf.reshape(output, shape=[-1, 2 * setting.HIDDEN_SIZE])
 
         # 全连接层
         output = tf.matmul(output,self.w)+self.b
-        self.output = tf.reshape(output,[-1,s[1],setting.TAG_NUM])
+        self.output = tf.reshape(output, [-1, s[1], setting.TAG_NUM])
 
         # CRF过程：
         log_likelihood,self.trans_params = tf.contrib.crf.crf_log_likelihood(
@@ -87,7 +87,7 @@ class model():
         指数平滑
         :return:
         '''
-        ema = tf.train.ExponentialMovingAverage(setting.EMA_RATE,self.global_step)
+        ema = tf.train.ExponentialMovingAverage(setting.EMA_RATE, self.global_step)
         return ema
 
     def optimize(self):
@@ -95,7 +95,8 @@ class model():
         定义反向传播
         :return:
         '''
-        learn_rate = tf.train.exponential_decay(setting.LEARN_RATE,self.global_step,setting.LR_DECAY_STEP,setting.LR_DECAY)
+        learn_rate = tf.train.exponential_decay(setting.LEARN_RATE, self.global_step, setting.LR_DECAY_STEP,
+                                                setting.LR_DECAY)
 
         optimizer = tf.train.AdamOptimizer(learn_rate).minimize(self.loss,self.global_step)
         ave_op = self.ema.apply(tf.trainable_variables())
@@ -131,7 +132,7 @@ class train():
             sess.run(tf.global_variables_initializer())
             for step in range(setting.TRAIN_TIMES):
 
-                x,y,l = self.u.word2vec(*self.d.getdata(setting.TEST_DATA,setting.BATCH_SIZE))
+                x,y,l = self.u.word2vec(*self.d.getdata(setting.TEST_DATA, setting.BATCH_SIZE))
                 loss ,_ = sess.run([self.model.loss,self.model.train_op],
                                    {
                                        self.model.x:x,
@@ -144,4 +145,4 @@ class train():
                     # 如果损失值小于最小值那么模型保存
                     if loss < current_loss:
                         loss = current_loss
-                        saver.save(sess,setting.CKPT_PATH+setting.MODEL_NAME,self.model.global_step)
+                        saver.save(sess, setting.CKPT_PATH + setting.MODEL_NAME, self.model.global_step)
