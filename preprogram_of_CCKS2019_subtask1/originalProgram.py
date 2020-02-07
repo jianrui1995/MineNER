@@ -18,12 +18,12 @@ def devide(ori_path,sentence_path,label_path,sum_path):
         "句号的下标列表"
         list_period = [i for i,x in enumerate(list_sentences) if x=="。"]
         str_sentence = "".join(list_sentences[:list_period[0]+1])
-        print(str_sentence)
         list_label = list_labels[:list_period[0]+1]
         sum = len(list_label)
         "写到文件中"
         print(str_sentence,file=f_sentence)
-        print(json.dumps(list_label,ensure_ascii=False),file=f_label)
+        list_label = [str(i) for i in list_label]
+        print(" ".join(list_label),file=f_label)
         print(str(sum),file=f_sum)
         for index in range(1,len(list_period)):
             str_sentence = "".join(list_sentences[list_period[index-1]+1:list_period[index] + 1])
@@ -31,7 +31,8 @@ def devide(ori_path,sentence_path,label_path,sum_path):
             sum = len(list_label)
             "写到文件中"
             print(str_sentence,file=f_sentence)
-            print(json.dumps(list_label,ensure_ascii=False),file=f_label)
+            list_label = [str(i) for i in list_label]
+            print(" ".join(list_label),file=f_label)
             print(str(sum),file=f_sum)
         data = f_ori.readline()
     f_ori.close()

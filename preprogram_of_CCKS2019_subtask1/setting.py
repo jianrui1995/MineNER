@@ -15,6 +15,18 @@ PRO_TEST_LABEL_PATH = '../Data/CCKS2019_subtask1/programed/test_label.txt'
 PRO_TRAIN_SUM_PATH = '../Data/CCKS2019_subtask1/programed/train_sum.txt'
 # 测试句子的字数量路径
 PRO_TEST_SUM_PATH = '../Data/CCKS2019_subtask1/programed/test_sum.txt'
+# WORD2VEC模型的路径
+WORD2VEC_PATH = '../model/word2vec/word2voc_char_size300_iter140.model'
+# 设置句子的最大长度，又程序自己计算
+MAX_SUM = 0
+# 设置字向量的向量大小
+WORDVEC_NUM = 300
+# 设置位置向量的大小
+LOCVEC_NUM = 100
+# 向量的总长度
+TOTALVEC_NUM = WORDVEC_NUM+LOCVEC_NUM
+# 位置向量的持久化路径
+LOC_VEC_PATH = "../Data/CCKS2019_subtask1/programed/loc_vec.json"
 
 
 
