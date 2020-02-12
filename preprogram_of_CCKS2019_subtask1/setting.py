@@ -2,7 +2,6 @@
 ORI_TRATIN_PATH = '../Data/CCKS2019_subtask1/ori/subtask1_training_part2.txt'
 # 原始测试集的路径
 ORI_TEST_PATH = '../Data/CCKS2019_subtask1/ori/subtask1_training_part1.txt'
-
 # 训练句子的路径
 PRO_TRAIN_SENTENCE_PATH = '../Data/CCKS2019_subtask1/programed/train_sentence.txt'
 # 测试集句子的路径
@@ -29,6 +28,8 @@ TOTALVEC_NUM = WORDVEC_NUM+LOCVEC_NUM
 LOC_VEC_PATH = "../Data/CCKS2019_subtask1/programed/loc_vec.json"
 
 
+# 定义导入的数据类型
+LOAD_PATH = [PRO_TRAIN_SENTENCE_PATH,PRO_TRAIN_SUM_PATH,PRO_TRAIN_LABEL_PATH]
 
 
 # 标签和实体名称的对应关系
@@ -56,3 +57,5 @@ TAG2LABEL = {
             "B_SYche":11,
             "I_SYche":12
         }
+# 设置label的总量
+LABEL_SUM = len([i for i in TAG2LABEL.items()])

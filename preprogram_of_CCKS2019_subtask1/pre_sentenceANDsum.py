@@ -17,8 +17,9 @@ class SentenceAndSumDataset():
         self.model =gensim.models.Word2Vec.load(setting.WORD2VEC_PATH)
         setting.MAX_SUM = self.calculate_max_sum(sum_path)
 
+    # @tf.function
     def __call__(self, *args, **kwargs):
-        sentenceANDsum_dataset = self.sentenceANDsum_dataset.map(lambda sen,sum: tf.py_function(self.sentence2wordvec,inp=[sen,sum],Tout=[tf.float32,tf.int32]))
+        sentenceANDsum_dataset = self.sentenceANDsum_dataset.map(lambda sen,sum: tf.py_function(self.sentence2wordvec,inp=[sen,sum],Tout=[tf.float32,tf.bool,tf.int32]))
         return sentenceANDsum_dataset
 
     def sentence2wordvec(self,sen,sum):
@@ -41,7 +42,9 @@ class SentenceAndSumDataset():
         f.close()
         for i in range(setting.MAX_SUM):
             vec[i] = np.append(vec[i],np.array(dict_loc[str(i)]))
-        return [vec,int_sum]
+        "制作mask"
+        sum = [True for _ in range(int_sum)]+[False for _ in range(int_sum,setting.MAX_SUM)]
+        return [vec,sum,int_sum]
 
     def word2vec_model(self,char):
         "使用word2vec模型转换字向量"

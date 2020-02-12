@@ -1,6 +1,6 @@
 # @Time    : 2020/2/8 0:02
 # @Author  : R.Jian
-# @NOTE    : 
+# @NOTE    : 相关数据的准备工作，包含生成距离向量。
 import preprogram_of_CCKS2019_subtask1.setting as setting
 import numpy as np
 import json
