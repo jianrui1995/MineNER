@@ -1,0 +1,6 @@
+model_checkpoint_path: "bilstm_att-3"
+all_model_checkpoint_paths: "bilstm_att-2"
+all_model_checkpoint_paths: "bilstm_att-3"
+all_model_checkpoint_timestamps: 1582031416.2333055
+all_model_checkpoint_timestamps: 1582031449.7752962
+last_preserved_timestamp: 1582031370.311296

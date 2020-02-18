@@ -17,5 +17,5 @@ class OutDataset():
 
 if __name__ == "__main__":
     out = OutDataset(*setting.LOAD_PATH)
-    for data in out().batch(2).take(2):
-        print(data[1])
+    for data in out().take(2):
+        print(data)

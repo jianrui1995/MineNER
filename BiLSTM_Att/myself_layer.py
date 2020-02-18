@@ -36,7 +36,7 @@ class Attention(tf.keras.layers.Layer):
         output = tf.math.multiply(output,tf.math.reciprocal(sqe))
         alpha = tf.keras.activations.softmax(output,axis=-1)
         if isfinal:
-            return output
+            return alpha
         # output = tf.reshape(alpha,[input_shape[0],input_shape[1],-1])
         output = tf.tensordot(output,self.att_keral,[(rank-1),(0)])
         return output
