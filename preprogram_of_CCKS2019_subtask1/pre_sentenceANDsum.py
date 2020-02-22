@@ -14,7 +14,8 @@ class SentenceAndSumDataset():
         sum_dataset = tf.data.TextLineDataset(sum_path)
         # 合并sentence和sum的数据集
         self.sentenceANDsum_dataset = tf.data.Dataset.zip((sentence_dataset,sum_dataset))
-        self.model =gensim.models.Word2Vec.load(setting.WORD2VEC_PATH)
+        "修改字向量的载入方式，修改这里"
+        self.model =gensim.models.KeyedVectors.load_word2vec_format(setting.GLOVE_PATH,binary=False)
         setting.MAX_SUM = self.calculate_max_sum(sum_path)
 
     # @tf.function
@@ -52,7 +53,7 @@ class SentenceAndSumDataset():
         try:
             return self.model[char]
         except BaseException:
-            return unknown
+            return self.model["<unk>"]
 
     def calculate_max_sum(self,sum_path):
         "计算句子的最大长度"
@@ -71,5 +72,5 @@ class SentenceAndSumDataset():
 
 if __name__ == "__main__":
     sen = SentenceAndSumDataset(setting.PRO_TRAIN_SENTENCE_PATH,setting.PRO_TRAIN_SUM_PATH)
-    for data in sen().batch(2).take(2):
-        print(data)
+    for data in sen().batch(1):
+        print(data[2].numpy()[0])
