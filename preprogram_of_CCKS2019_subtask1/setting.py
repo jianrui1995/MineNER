@@ -17,7 +17,7 @@ PRO_TEST_SUM_PATH = '../Data/CCKS2019_subtask1/programed/test_sum.txt'
 # WORD2VEC模型的路径
 WORD2VEC_PATH = '../model/word2vec/word2voc_char_size300_iter140.model'
 # GLOVE模型的路径
-GLOVE_PATH = "model/glove/vectors.txt"
+GLOVE_PATH = "../model/glove/vectors.txt"
 # 设置句子的最大长度，又程序自己计算
 MAX_SUM = 0
 # 设置字向量的向量大小
