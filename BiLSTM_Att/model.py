@@ -83,12 +83,12 @@ def train(num,restore_path=None,epoch=setting.EPOCH):
     if restore_path:
         ckpt.restore(setting.MODEL_PATH_RESTORE+setting.MODEL_NAME_RESTORE+restore_path)
     for _ in range(1,epoch+1):
-        # for data in outdataset().batch(10):
-        #     with tf.GradientTape() as tape:
-        #         out = bilstm_att(data[0][0],mask=data[0][1])
-        #         loss = bilstm_att.loss(out,data[1][0])
-        #     grad = tape.gradient(loss,bilstm_att.trainable_variables)
-        #     op.apply_gradients(zip(grad,bilstm_att.trainable_variables))
+        for data in outdataset().batch(10):
+            with tf.GradientTape() as tape:
+                out = bilstm_att(data[0][0],mask=data[0][1])
+                loss = bilstm_att.loss(out,data[1][0])
+            grad = tape.gradient(loss,bilstm_att.trainable_variables)
+            op.apply_gradients(zip(grad,bilstm_att.trainable_variables))
 
         if _ % setting.SAVED_EVERY_TIMES == 0:
             "验证部分：将训练集的结果放到指定的文件中"
