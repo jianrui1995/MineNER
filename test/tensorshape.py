@@ -4,9 +4,8 @@
 
 
 import numpy as np
+import time
 
-list_a = np.array([1,1,0])
-for i in range(len(list_a)):
-    if list_a[i] != 0:
-        print(list_a[i])
-
+for i in range(10):
+    print(i)
+    time.sleep(10)
