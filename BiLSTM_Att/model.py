@@ -6,7 +6,7 @@
 import tensorflow as tf
 
 import sys
-sys.path.append(r"~/myPthonProject/MineNER/")
+sys.path.append(r"/home/tech/myPthonProject/MineNER/")
 
 import BiLSTM_Att.setting as setting
 from preprogram_of_CCKS2019_subtask1.pre_out import OutDataset
