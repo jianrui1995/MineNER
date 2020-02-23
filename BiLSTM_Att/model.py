@@ -54,15 +54,15 @@ class Model(tf.keras.Model):
         "每一次预测，统计其相关的信"
         list_pre = pre.numpy()[:sum.numpy()[0]]
         list_rel = rel.numpy()[:sum.numpy()[0]]
-        gold,pre,corr = 0,0,0
+        rel,pre,corr = 0,0,0
         for i in range(sum.numpy()[0]):
             if list_rel[i] != 0:
-                gold = gold + 1
+                rel = rel + 1
             if list_pre[i] != 0:
                 pre = pre + 1
             if list_rel[i] == list_pre[i]:
                 corr = corr + 1
-        return gold,pre,corr
+        return pre,rel,corr
 
     def check_F1(self,pre,rel,corr):
         "计算测评"
@@ -83,25 +83,26 @@ def train(num,restore_path=None,epoch=setting.EPOCH):
     if restore_path:
         ckpt.restore(setting.MODEL_PATH_RESTORE+setting.MODEL_NAME_RESTORE+restore_path)
     for _ in range(1,epoch+1):
-        for data in outdataset().batch(10):
-            with tf.GradientTape() as tape:
-                out = bilstm_att(data[0][0],mask=data[0][1])
-                loss = bilstm_att.loss(out,data[1][0])
-            grad = tape.gradient(loss,bilstm_att.trainable_variables)
-            op.apply_gradients(zip(grad,bilstm_att.trainable_variables))
+        # for data in outdataset().batch(10):
+        #     with tf.GradientTape() as tape:
+        #         out = bilstm_att(data[0][0],mask=data[0][1])
+        #         loss = bilstm_att.loss(out,data[1][0])
+        #     grad = tape.gradient(loss,bilstm_att.trainable_variables)
+        #     op.apply_gradients(zip(grad,bilstm_att.trainable_variables))
 
         if _ % setting.SAVED_EVERY_TIMES == 0:
             "验证部分：将训练集的结果放到指定的文件中"
-            gold, pre, corr = 0.001, 0.001, 0.001
+            rel, pre, corr = 0, 0, 0
             for data in outdataset().batch(1):
                 out = bilstm_att(data[0][0],mask=data[0][1])
                 pre_result = bilstm_att.pretect(out)
                 rel_result = bilstm_att.pretect(data[1][0])
                 list_result = bilstm_att.calculate_num(pre_result,rel_result,data[0][2])
-                gold = gold + list_result[0]
-                pre = pre + list_result[1]
+                rel = rel + list_result[1]
+                pre = pre + list_result[0]
                 corr = corr +list_result[2]
-                list_result = bilstm_att.check_F1(pre,gold,corr)
+                print(pre,rel,corr)
+            list_result = bilstm_att.check_F1(pre,rel,corr)
             f = open(setting.LOG_PATH,"a+",encoding="utf8")
             print("time {} : precison: {} , recall: {} , F1: {}".format(_,*list_result),file=f)
             f.close()
