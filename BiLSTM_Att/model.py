@@ -2,7 +2,11 @@
 # @Author  : R.Jian
 # @NOTE    : 
 
+
 import tensorflow as tf
+
+import sys
+sys.path.append(r"~/myPthonProject/MineNER/")
 
 import BiLSTM_Att.setting as setting
 from preprogram_of_CCKS2019_subtask1.pre_out import OutDataset
