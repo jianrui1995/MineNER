@@ -101,7 +101,6 @@ def train(num,restore_path=None,epoch=setting.EPOCH):
                 rel = rel + list_result[1]
                 pre = pre + list_result[0]
                 corr = corr +list_result[2]
-                print(pre,rel,corr)
             list_result = bilstm_att.check_F1(pre,rel,corr)
             f = open(setting.LOG_PATH,"a+",encoding="utf8")
             print("time {} : precison: {} , recall: {} , F1: {}".format(_,*list_result),file=f)
