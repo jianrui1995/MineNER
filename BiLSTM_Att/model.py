@@ -53,14 +53,16 @@ class Model(tf.keras.Model):
     def calculate_num(self,pre,rel,sum):
         "每一次预测，统计其相关的信"
         list_pre = pre.numpy()[:sum.numpy()[0]]
+        print(list_pre)
         list_rel = rel.numpy()[:sum.numpy()[0]]
+        print(list_rel)
         rel,pre,corr = 0,0,0
         for i in range(sum.numpy()[0]):
             if list_rel[i] != 0:
                 rel = rel + 1
             if list_pre[i] != 0:
                 pre = pre + 1
-            if list_rel[i] == list_pre[i]:
+            if (list_rel[i] == list_pre[i]) and (list_rel[i]!=0):
                 corr = corr + 1
         return pre,rel,corr
 
@@ -92,7 +94,7 @@ def train(num,restore_path=None,epoch=setting.EPOCH):
 
         if _ % setting.SAVED_EVERY_TIMES == 0:
             "验证部分：将训练集的结果放到指定的文件中"
-            rel, pre, corr = 0, 0, 0
+            pre,rel,corr = 0, 0, 0
             for data in outdataset().batch(1):
                 out = bilstm_att(data[0][0],mask=data[0][1])
                 pre_result = bilstm_att.pretect(out)

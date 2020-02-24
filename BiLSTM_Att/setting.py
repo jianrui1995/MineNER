@@ -41,7 +41,7 @@ LOG_PATH = "log.txt"
 # 预定义的F1值
 F1 = 0.8
 # 训练多少次存储
-SAVED_EVERY_TIMES = 1
+SAVED_EVERY_TIMES = 10
 # LSTM_1 的神经元个数
 LISM_1_UNTIS = 150
 # LSTM_2 的神经元个数
