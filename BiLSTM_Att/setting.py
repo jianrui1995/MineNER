@@ -5,7 +5,7 @@
 # 模型存储的序号
 STRAT_NUM = 1
 # 训练的次数
-EPOCH =10000
+EPOCH =40
 # 预测结果的存储路径：
 TREAIN_SAVE_PATH = "result.txt"
 

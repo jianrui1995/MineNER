@@ -3,6 +3,7 @@
 # @NOTE    : 
 
 
+import tracemalloc
 import tensorflow as tf
 
 import sys
@@ -111,6 +112,13 @@ def train(num,restore_path=None,epoch=setting.EPOCH):
             if list_result[2]>0.9:
                 break
         print("time ",_," finished")
+
+    snapshot = tracemalloc.take_snapshot()
+    top_stats = snapshot.statistics('lineno')
+
+    print("[ Top 10 ]")
+    for stat in top_stats[:200]:
+        print(stat)
 
 def test(restore_path):
     # restore_path:要载入的文件路径
