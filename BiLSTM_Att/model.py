@@ -45,6 +45,7 @@ class Model(tf.keras.Model):
         loss = tf.math.reduce_sum(outs)
         return -loss
 
+    @tf.function
     def pretect(self,outs):
         "测试需要的操作,只能一条，一条的输如"
         outs = tf.reshape(outs,[outs.shape[1],outs.shape[2]])
@@ -75,22 +76,25 @@ class Model(tf.keras.Model):
 
 
 @tf.function
-def train(model,dataset,optimizer):
-    for data in dataset:
+def train(model,data,optimizer):
         with tf.GradientTape() as tape:
             out = model(data[0][0],mask=data[0][1])
             loss = model.loss(out,data[1][0])
         grad = tape.gradient(loss,model.trainable_variables)
         optimizer.apply_gradients(zip(grad,model.trainable_variables))
 
+@tf.function
+def test(model,data):
+    out = model(data[0][0], mask=data[0][1])
+    return out
+
 def fit(num,restore_path=None,epoch=setting.EPOCH):
     # num:存储的序号
     # restore_path:为载入模型的序号
     # epoch:为训练的次数
-    tracemalloc.start()
     outdataset = OutDataset(*setting.LOAD_PATH)
     bilstm_att = Model()
-    op = tf.keras.optimizers.Adam(1e-5)
+    op = tf.keras.optimizers.Adam(1e-3)
     ckpt = tf.train.Checkpoint(model=bilstm_att)#在这个位置更新优化器操作。
     ckptmana = tf.train.CheckpointManager(ckpt,setting.MODEL_PATH_SAVE,max_to_keep=100,checkpoint_name=setting.MODEL_NAME_SAVE)
     if restore_path:
@@ -103,9 +107,9 @@ def fit(num,restore_path=None,epoch=setting.EPOCH):
         #         loss = bilstm_att.loss(out,data[1][0])
         #     grad = tape.gradient(loss,bilstm_att.trainable_variables)
         #     op.apply_gradients(zip(grad,bilstm_att.trainable_variables))
-
         "修改后的训练"
-        train(bilstm_att,outdataset().batch(10),op)
+        for data in outdataset().batch(10):
+            train(bilstm_att,data,op)
 
         if _ % setting.SAVED_EVERY_TIMES == 0:
             "验证部分：将训练集的结果放到指定的文件中"
@@ -129,26 +133,23 @@ def fit(num,restore_path=None,epoch=setting.EPOCH):
                 break
         print("time ",_," finished")
 
-    snapshot = tracemalloc.take_snapshot()
-    top_stats = snapshot.statistics('lineno')
 
-    print("[ Top 10 ]")
-    for stat in top_stats[:200]:
-        print(stat)
 
-def test(restore_path):
-    # restore_path:要载入的文件路径
-    path = setting.MODEL_PATH_RESTORE+setting.MODEL_NAME_RESTORE+restore_path
-    outdataset = OutDataset(*setting.LOAD_PATH)
-    bilstm_att = Model()
-    op = tf.keras.optimizers.Adam(1e-5)
-    ckpt = tf.train.Checkpoint(model=bilstm_att,optimizer=op)
-    ckpt.restore(path)
-    for data in outdataset().batch(1).take(1):
-        out = bilstm_att(data[0][0], mask=data[0][1])
-        # 可以修改的部分。
-        result = bilstm_att.pretect(out)
-        print(" ".join([str(i) for i in result.numpy().tolist()]))
+
+
+# def test(restore_path):
+#     # restore_path:要载入的文件路径
+#     path = setting.MODEL_PATH_RESTORE+setting.MODEL_NAME_RESTORE+restore_path
+#     outdataset = OutDataset(*setting.LOAD_PATH)
+#     bilstm_att = Model()
+#     op = tf.keras.optimizers.Adam(1e-5)
+#     ckpt = tf.train.Checkpoint(model=bilstm_att,optimizer=op)
+#     ckpt.restore(path)
+#     for data in outdataset().batch(1).take(1):
+#         out = bilstm_att(data[0][0], mask=data[0][1])
+#         # 可以修改的部分。
+#         result = bilstm_att.pretect(out)
+#         print(" ".join([str(i) for i in result.numpy().tolist()]))
 
 
 if __name__ == "__main__":
