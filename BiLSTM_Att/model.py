@@ -76,6 +76,7 @@ def train(num,restore_path=None,epoch=setting.EPOCH):
     # num:存储的序号
     # restore_path:为载入模型的序号
     # epoch:为训练的次数
+    tracemalloc.start()
     outdataset = OutDataset(*setting.LOAD_PATH)
     bilstm_att = Model()
     op = tf.keras.optimizers.Adam(1e-5)
