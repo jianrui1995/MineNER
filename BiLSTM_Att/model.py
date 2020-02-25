@@ -65,6 +65,15 @@ class Model(tf.keras.Model):
                 corr = corr + 1
         return pre,rel,corr
 
+    @tf.function
+    def train(self,dataset,optimizer):
+        for data in dataset:
+            with tf.GradientTape() as tape:
+                out = self.__call__(data[0][0],mask=data[0][1])
+                loss = self.loss(out,data[1][0])
+            grad = tape.gradient(loss,self.trainable_variables)
+            optimizer.apply_gradients(zip(grad,self.trainable_variables))
+
     def check_F1(self,pre,rel,corr):
         "计算测评"
         precision = corr/pre
@@ -85,12 +94,16 @@ def train(num,restore_path=None,epoch=setting.EPOCH):
     if restore_path:
         ckpt.restore(setting.MODEL_PATH_RESTORE+setting.MODEL_NAME_RESTORE+restore_path)
     for _ in range(1,epoch+1):
-        for data in outdataset().batch(10):
-            with tf.GradientTape() as tape:
-                out = bilstm_att(data[0][0],mask=data[0][1])
-                loss = bilstm_att.loss(out,data[1][0])
-            grad = tape.gradient(loss,bilstm_att.trainable_variables)
-            op.apply_gradients(zip(grad,bilstm_att.trainable_variables))
+        "修改前的训练"
+        # for data in outdataset().batch(10):
+        #     with tf.GradientTape() as tape:
+        #         out = bilstm_att(data[0][0],mask=data[0][1])
+        #         loss = bilstm_att.loss(out,data[1][0])
+        #     grad = tape.gradient(loss,bilstm_att.trainable_variables)
+        #     op.apply_gradients(zip(grad,bilstm_att.trainable_variables))
+
+        "修改后的训练"
+        bilstm_att.train(outdataset().batch(10),op)
 
         if _ % setting.SAVED_EVERY_TIMES == 0:
             "验证部分：将训练集的结果放到指定的文件中"
