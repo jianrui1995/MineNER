@@ -81,7 +81,7 @@ def train(model,data,optimizer):
             out = model(data[0][0],mask=data[0][1])
             loss = model.loss(out,data[1][0])
         grad = tape.gradient(loss,model.trainable_variables)
-        tape.reset()
+        del tape
         optimizer.apply_gradients(zip(grad,model.trainable_variables))
 
 @tf.function
