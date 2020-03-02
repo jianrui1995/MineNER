@@ -28,7 +28,7 @@ LOAD_PATH = [PRO_TRAIN_SENTENCE_OLD_PATH,PRO_TRAIN_SUM_OLD_PATH,PRO_TRAIN_LABEL_
 # 载入的模型路径
 MODEL_RESTORE_PATH = "../model/bilstm-att_1/"
 # 模型的名字
-MODEL_NAME = "bilstm_att-1"
+MODEL_NAME = "bilstm_att-6"
 # 模型的载入完整路径
 MODEL_PATH = MODEL_RESTORE_PATH+MODEL_NAME
 

@@ -22,7 +22,7 @@ class MNLP():
 
     def __call__(self, *args, **kwargs):
         f = open(setting.PRO_SELETC_FILE_PATH,"w",encoding="utf8")
-        for data in self.dataset().batch(1).take(10):
+        for data in self.dataset().batch(1):
             out = self.bilstm_att(data[0][0],mask=data[0][1])
             out = self.MNLP(out,data[0][2])
             print(str(out),file=f)
@@ -33,6 +33,7 @@ class MNLP():
         out = tf.math.reduce_max(out,axis=-1)
         out = tf.math.reduce_sum(out,axis=-1)
         out = tf.math.divide(out,sum.numpy()[0])
+        print("finish!")
         return out.numpy()[0]
 
 if __name__ == "__main__":
