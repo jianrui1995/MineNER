@@ -109,7 +109,7 @@ def fit(num,restore_path=None,epoch=setting.EPOCH):
         #     grad = tape.gradient(loss,bilstm_att.trainable_variables)
         #     op.apply_gradients(zip(grad,bilstm_att.trainable_variables))
         "修改后的训练"
-        for data in outdataset().batch(10):
+        for data in outdataset().batch(setting.BATCH_SIZE):
             train(bilstm_att,data,op)
 
         if _ % setting.SAVED_EVERY_TIMES == 0:
@@ -128,8 +128,9 @@ def fit(num,restore_path=None,epoch=setting.EPOCH):
             print("time {} : precison: {} , recall: {} , F1: {}".format(_,*list_result),file=f)
             f.close()
             if list_result[2]>setting.F1:
-                ckptmana.save(num)
-                num = num + 1
+                pass
+            ckptmana.save(num)
+            num = num + 1
             if list_result[2]>0.9:
                 break
         print("time ",_," finished")
