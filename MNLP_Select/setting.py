@@ -34,3 +34,5 @@ MODEL_PATH = MODEL_RESTORE_PATH+MODEL_NAME
 
 # 概率文件存放路径
 PRO_SELETC_FILE_PATH = "data/old_select.txt"
+# 选择前n小的概率
+TOP_N = 100
