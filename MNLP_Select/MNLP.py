@@ -31,9 +31,9 @@ class MNLP():
     def MNLP(self,input,sum):
         out = input[:,0:sum.numpy()[0],:]
         out = tf.math.reduce_max(out,axis=-1)
-        out = tf.math.reduce_sum(out,axis=-1)
-        out = tf.math.divide(out,sum.numpy()[0])
+        out = tf.math.reduce_mean(out,axis=-1)
         print("finish!")
+        print(out.numpy()[0])
         return out.numpy()[0]
 
 if __name__ == "__main__":
