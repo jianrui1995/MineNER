@@ -3,7 +3,7 @@
 # @NOTE    : 模型训练的相关设置
 
 # 模型存储的序号
-STRAT_NUM = 1
+STRAT_NUM = 17
 # 训练的次数
 EPOCH =10000
 # 预测结果的存储路径：
@@ -19,7 +19,8 @@ MODEL_NAME_SAVE = "bilstm_att"
 MODEL_PATH_RESTORE = "../model/bilstm-att_1/"
 # 模型读取的名字
 MODEL_NAME_RESTORE = "bilstm_att"
-
+# 模型读取的序号
+MODEL_NUM_RESTORE = "-15"
 # 训练句子的路径
 PRO_TRAIN_SENTENCE_PATH = '../MNLP_Select/data/new_train_sentence.txt'
 # 训练句子的标签路径
@@ -43,7 +44,7 @@ F1 = 0.8
 # 训练多少次存储
 SAVED_EVERY_TIMES = 25
 # 批大小
-BATCH_SIZE = 10
+BATCH_SIZE = 25
 # LSTM_1 的神经元个数
 LISM_1_UNTIS = 150
 # LSTM_2 的神经元个数

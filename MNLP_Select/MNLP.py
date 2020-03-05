@@ -32,6 +32,7 @@ class MNLP():
         "计算每个样本概率的平均值"
         out = input[:,0:sum.numpy()[0],:]
         out = tf.math.reduce_max(out,axis=-1)
+        out = tf.math.log(out)
         out = tf.math.reduce_mean(out,axis=-1)
         return out.numpy()[0]
 
@@ -40,7 +41,7 @@ class MNLP():
         list_mean = [[k,float(v.strip())] for k,v in enumerate(f.readlines())]
         f.close()
         list_topN = [[0,1.1] for _ in range(setting.TOP_N+1)]
-        list_topN[-1][1] = -1
+        list_topN[-1][1] = - sys.float_info.max
         for data in list_mean:
             if data[1]<list_topN[0][1]:
                 for i in range(1,len(list_topN)):

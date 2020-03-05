@@ -95,7 +95,7 @@ def fit(num,restore_path=None,epoch=setting.EPOCH):
     # epoch:为训练的次数
     outdataset = OutDataset(*setting.LOAD_PATH)
     bilstm_att = Model()
-    op = tf.keras.optimizers.Adam(1e-3)
+    op = tf.keras.optimizers.Adam(1e-5)
     ckpt = tf.train.Checkpoint(model=bilstm_att)#在这个位置更新优化器操作。
     ckptmana = tf.train.CheckpointManager(ckpt,setting.MODEL_PATH_SAVE,max_to_keep=100,checkpoint_name=setting.MODEL_NAME_SAVE)
     if restore_path:
@@ -156,6 +156,6 @@ def fit(num,restore_path=None,epoch=setting.EPOCH):
 
 if __name__ == "__main__":
     "训练"
-    fit(setting.STRAT_NUM)
+    fit(setting.STRAT_NUM,setting.MODEL_NUM_RESTORE)
     "测试"
     # test("-2")
