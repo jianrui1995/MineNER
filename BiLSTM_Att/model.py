@@ -93,7 +93,9 @@ def fit(num,restore_path=None,epoch=setting.EPOCH):
     # num:存储的序号
     # restore_path:为载入模型的序号
     # epoch:为训练的次数
-    outdataset = OutDataset(*setting.LOAD_PATH)
+    outdataset = OutDataset(*setting.LOAD_NEW_PATH)
+    outdataset_test = OutDataset(*setting.LOAD_TEST_PATH)
+    outdataset_old = OutDataset(*setting.LOAD_OLD_PATH)
     bilstm_att = Model()
     op = tf.keras.optimizers.Adam(1e-5)
     ckpt = tf.train.Checkpoint(model=bilstm_att)#在这个位置更新优化器操作。
@@ -109,11 +111,13 @@ def fit(num,restore_path=None,epoch=setting.EPOCH):
         #     grad = tape.gradient(loss,bilstm_att.trainable_variables)
         #     op.apply_gradients(zip(grad,bilstm_att.trainable_variables))
         "修改后的训练"
-        for data in outdataset().batch(setting.BATCH_SIZE):
+        for data in outdataset().shuffle(setting.BATCH_SIZE*8,reshuffle_each_iteration=True).batch(setting.BATCH_SIZE):
             train(bilstm_att,data,op)
 
         if _ % setting.SAVED_EVERY_TIMES == 0:
-            "验证部分：将训练集的结果放到指定的文件中"
+            infor = "time = {} - save_num = {}  ; train_new - precison={} - recall={} - F1={} ; train_old - precison={} - recall={} - F1={} ; test - precison={} - recall={} - F1={}"
+
+            "验证部分：将训练集的结果放到指定的文件中,验证  选中训练集。"
             pre,rel,corr = 1, 0, 0
             for data in outdataset().batch(1):
                 out = bilstm_att(data[0][0],mask=data[0][1])
@@ -124,14 +128,43 @@ def fit(num,restore_path=None,epoch=setting.EPOCH):
                 pre = pre + list_result[0]
                 corr = corr +list_result[2]
             list_result = bilstm_att.check_F1(pre,rel,corr)
+            infor.format(_,num,*list_result)
+
+            "验证部分：将训练集的结果放到指定的文件中,验证  未选中训练集。"
+            pre,rel,corr = 1, 0, 0
+            for data in outdataset_old().batch(1):
+                out = bilstm_att(data[0][0],mask=data[0][1])
+                pre_result = bilstm_att.pretect(out)
+                rel_result = bilstm_att.pretect(data[1][0])
+                list_result = bilstm_att.calculate_num(pre_result,rel_result,data[0][2])
+                rel = rel + list_result[1]
+                pre = pre + list_result[0]
+                corr = corr +list_result[2]
+            list_result = bilstm_att.check_F1(pre,rel,corr)
+            infor.format(*list_result)
+
+            "验证部分：将训练集的结果放到指定的文件中,验证  测试集。"
+            pre,rel,corr = 1, 0, 0
+            for data in outdataset_old().batch(1):
+                out = bilstm_att(data[0][0],mask=data[0][1])
+                pre_result = bilstm_att.pretect(out)
+                rel_result = bilstm_att.pretect(data[1][0])
+                list_result = bilstm_att.calculate_num(pre_result,rel_result,data[0][2])
+                rel = rel + list_result[1]
+                pre = pre + list_result[0]
+                corr = corr +list_result[2]
+            list_result = bilstm_att.check_F1(pre,rel,corr)
+            infor.format(*list_result)
+
+            "结果打到log文件中"
             f = open(setting.LOG_PATH,"a+",encoding="utf8")
-            print("time {} : precison: {} , recall: {} , F1: {}".format(_,*list_result),file=f)
+            print(infor,file=f)
             f.close()
-            if list_result[2]>setting.F1:
-                pass
+
+            "模型的存储"
             ckptmana.save(num)
             num = num + 1
-            if list_result[2]>0.9:
+            if list_result[2]>0.95:
                 break
         print("time ",_," finished")
 
@@ -156,6 +189,6 @@ def fit(num,restore_path=None,epoch=setting.EPOCH):
 
 if __name__ == "__main__":
     "训练"
-    fit(setting.STRAT_NUM,setting.MODEL_NUM_RESTORE)
+    fit(setting.STRAT_NUM)
     "测试"
     # test("-2")
