@@ -115,7 +115,10 @@ def fit(num,restore_path=None,epoch=setting.EPOCH):
             train(bilstm_att,data,op)
 
         if _ % setting.SAVED_EVERY_TIMES == 0:
-            infor = "time = {} - save_num = {}  ; train_new - precison={} - recall={} - F1={} ; train_old - precison={} - recall={} - F1={} ; test - precison={} - recall={} - F1={}"
+            infor1 = "time = {} - save_num = {}  ;"
+            infor2 = " train_new - precison={} - recall={} - F1={} ;"
+            infor3 = " train_old - precison={} - recall={} - F1={} ;"
+            infor4 = " test - precison={} - recall={} - F1={}"
 
             "验证部分：将训练集的结果放到指定的文件中,验证  选中训练集。"
             pre,rel,corr = 1, 0, 0
@@ -128,7 +131,8 @@ def fit(num,restore_path=None,epoch=setting.EPOCH):
                 pre = pre + list_result[0]
                 corr = corr +list_result[2]
             list_result = bilstm_att.check_F1(pre,rel,corr)
-            infor.format(_,num,*list_result)
+            infor1.format(_,num)
+            infor2.format(*list_result)
 
             "验证部分：将训练集的结果放到指定的文件中,验证  未选中训练集。"
             pre,rel,corr = 1, 0, 0
@@ -141,7 +145,7 @@ def fit(num,restore_path=None,epoch=setting.EPOCH):
                 pre = pre + list_result[0]
                 corr = corr +list_result[2]
             list_result = bilstm_att.check_F1(pre,rel,corr)
-            infor.format(*list_result)
+            infor3.format(*list_result)
 
             "验证部分：将训练集的结果放到指定的文件中,验证  测试集。"
             pre,rel,corr = 1, 0, 0
@@ -154,11 +158,11 @@ def fit(num,restore_path=None,epoch=setting.EPOCH):
                 pre = pre + list_result[0]
                 corr = corr +list_result[2]
             list_result = bilstm_att.check_F1(pre,rel,corr)
-            infor.format(*list_result)
+            infor4.format(*list_result)
 
             "结果打到log文件中"
             f = open(setting.LOG_PATH,"a+",encoding="utf8")
-            print(infor,file=f)
+            print(infor1+infor2+infor3+infor4,file=f)
             f.close()
 
             "模型的存储"
