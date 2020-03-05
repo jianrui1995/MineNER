@@ -145,7 +145,7 @@ def fit(num,restore_path=None,epoch=setting.EPOCH):
 
             "验证部分：将训练集的结果放到指定的文件中,验证  测试集。"
             pre,rel,corr = 1, 0, 0
-            for data in outdataset_old().batch(1):
+            for data in outdataset_test().batch(1):
                 out = bilstm_att(data[0][0],mask=data[0][1])
                 pre_result = bilstm_att.pretect(out)
                 rel_result = bilstm_att.pretect(data[1][0])
