@@ -97,7 +97,7 @@ def fit(num,restore_path=None,epoch=setting.EPOCH):
     outdataset_test = OutDataset(*setting.LOAD_TEST_PATH)
     outdataset_old = OutDataset(*setting.LOAD_OLD_PATH)
     bilstm_att = Model()
-    op = tf.keras.optimizers.Adam(1e-5)
+    op = tf.keras.optimizers.Adam(setting.LEARN_RATE)
     ckpt = tf.train.Checkpoint(model=bilstm_att)#在这个位置更新优化器操作。
     ckptmana = tf.train.CheckpointManager(ckpt,setting.MODEL_PATH_SAVE,max_to_keep=100,checkpoint_name=setting.MODEL_NAME_SAVE)
     if restore_path:
@@ -117,7 +117,7 @@ def fit(num,restore_path=None,epoch=setting.EPOCH):
         if _ % setting.SAVED_EVERY_TIMES == 0:
             infor1 = "time = {} - save_num = {}  ;"
             infor2 = " train_new - precison={} - recall={} - F1={} ;"
-            infor3 = " train_old - precison={} - recall={} - F1={} ;"
+            # infor3 = " train_old - precison={} - recall={} - F1={} ;"
             infor4 = " test - precison={} - recall={} - F1={}"
 
             "验证部分：将训练集的结果放到指定的文件中,验证  选中训练集。"
@@ -131,10 +131,11 @@ def fit(num,restore_path=None,epoch=setting.EPOCH):
                 pre = pre + list_result[0]
                 corr = corr +list_result[2]
             list_result = bilstm_att.check_F1(pre,rel,corr)
-            infor1.format(_,num)
-            infor2.format(*list_result)
+            infor1 =  infor1.format(_,num)
+            infor2 =  infor2.format(*list_result)
 
             "验证部分：将训练集的结果放到指定的文件中,验证  未选中训练集。"
+            """
             pre,rel,corr = 1, 0, 0
             for data in outdataset_old().batch(1):
                 out = bilstm_att(data[0][0],mask=data[0][1])
@@ -146,7 +147,7 @@ def fit(num,restore_path=None,epoch=setting.EPOCH):
                 corr = corr +list_result[2]
             list_result = bilstm_att.check_F1(pre,rel,corr)
             infor3.format(*list_result)
-
+            """
             "验证部分：将训练集的结果放到指定的文件中,验证  测试集。"
             pre,rel,corr = 1, 0, 0
             for data in outdataset_test().batch(1):
@@ -158,11 +159,11 @@ def fit(num,restore_path=None,epoch=setting.EPOCH):
                 pre = pre + list_result[0]
                 corr = corr +list_result[2]
             list_result = bilstm_att.check_F1(pre,rel,corr)
-            infor4.format(*list_result)
+            infor4 =  infor4.format(*list_result)
 
             "结果打到log文件中"
             f = open(setting.LOG_PATH,"a+",encoding="utf8")
-            print(infor1+infor2+infor3+infor4,file=f)
+            print(infor1+infor2+infor4,file=f)
             f.close()
 
             "模型的存储"
@@ -193,6 +194,6 @@ def fit(num,restore_path=None,epoch=setting.EPOCH):
 
 if __name__ == "__main__":
     "训练"
-    fit(setting.STRAT_NUM)
+    fit(setting.STRAT_NUM,setting.MODEL_NUM_RESTORE)
     "测试"
     # test("-2")
