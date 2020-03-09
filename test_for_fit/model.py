@@ -26,7 +26,10 @@ def train():
     mo.compile(optimizer=tf.keras.optimizers.Adam(1e-3),
                loss=MineLoss(from_logits=False),
                metrics=[MineMetric()])
-    mo.fit(re().batch(4),epochs=5)
+    mo.fit(re().batch(4),
+           epochs=5,
+           validation_data=re().batch(4),
+           use_multiprocessing=True)
 
 
 
