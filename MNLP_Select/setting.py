@@ -26,9 +26,9 @@ PRO_TRAIN_SUM_OLD_PATH = 'data/old_train_sum.txt'
 # dataset载入的数据
 LOAD_PATH = [PRO_TRAIN_SENTENCE_OLD_PATH,PRO_TRAIN_SUM_OLD_PATH,PRO_TRAIN_LABEL_OLD_PATH]
 # 载入的模型路径
-MODEL_RESTORE_PATH = "../model/bilstm-att_2/"
+MODEL_RESTORE_PATH = "../model/bilstm-att_5/"
 # 模型的名字
-MODEL_NAME = "bilstm_att-59"
+MODEL_NAME = "bilstm_att-27"
 # 模型的载入完整路径
 MODEL_PATH = MODEL_RESTORE_PATH+MODEL_NAME
 

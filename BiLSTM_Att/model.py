@@ -111,7 +111,7 @@ def fit(num,restore_path=None,epoch=setting.EPOCH):
         #     grad = tape.gradient(loss,bilstm_att.trainable_variables)
         #     op.apply_gradients(zip(grad,bilstm_att.trainable_variables))
         "修改后的训练"
-        for data in outdataset().shuffle(setting.BATCH_SIZE*8,reshuffle_each_iteration=True).batch(setting.BATCH_SIZE):
+        for data in outdataset().shuffle(setting.BATCH_SIZE*setting.SHU_NUM,reshuffle_each_iteration=True).batch(setting.BATCH_SIZE):
             train(bilstm_att,data,op)
 
         if _ % setting.SAVED_EVERY_TIMES == 0:

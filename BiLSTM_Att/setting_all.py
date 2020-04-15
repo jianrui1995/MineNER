@@ -18,11 +18,11 @@ MODEL_NAME_SAVE = "bilstm_att"
 STRAT_NUM = 1
 
 # 模型的读取路径
-MODEL_PATH_RESTORE = "../model/bilstm-att_2/"
+MODEL_PATH_RESTORE = "../model/bilstm-att_all/"
 # 模型读取的名字
 MODEL_NAME_RESTORE = "bilstm_att"
 # 模型读取的序号
-MODEL_NUM_RESTORE = None
+MODEL_NUM_RESTORE = "-8"
 
 # 训练句子的路径  选中
 PRO_TRAIN_NEW_SENTENCE_PATH = '../Data/CCKS2019_subtask1/programed/train_sentence.txt'
@@ -59,7 +59,9 @@ F1 = 0.8
 # 训练多少次存储
 SAVED_EVERY_TIMES = 40
 # 批大小
-BATCH_SIZE = 300
+BATCH_SIZE = 100
+# 随机量
+SHU_NUM = 4
 # LSTM_1 的神经元个数
 LISM_1_UNTIS = 150
 # LSTM_2 的神经元个数
