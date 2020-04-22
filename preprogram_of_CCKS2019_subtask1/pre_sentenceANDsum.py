@@ -72,5 +72,5 @@ class SentenceAndSumDataset():
 
 if __name__ == "__main__":
     sen = SentenceAndSumDataset(setting.PRO_TRAIN_SENTENCE_PATH,setting.PRO_TRAIN_SUM_PATH)
-    for data in sen().batch(1):
-        print(data[2].numpy()[0])
+    for data in sen().batch(1).take(1):
+        print(data)

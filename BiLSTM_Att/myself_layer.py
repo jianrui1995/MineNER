@@ -40,3 +40,45 @@ class Attention(tf.keras.layers.Layer):
         # output = tf.reshape(alpha,[input_shape[0],input_shape[1],-1])
         output = tf.tensordot(output,self.att_keral,[(rank-1),(0)])
         return output
+
+class LayerNormalization(tf.keras.layers.Layer):
+    def __init__(self,
+                 activity_regularizer=None,
+                 activation = tf.keras.activations.tanh,
+                 **kwargs
+                 ):
+        super(LayerNormalization,self).__init__(
+            activity_regularizer=tf.keras.regularizers.get(activity_regularizer),
+            **kwargs
+        )
+        self.activation = activation
+
+    def build(self, input_shape):
+        self.bias = self.add_weight(
+            name="bias",
+            shape=(),
+            dtype=tf.float32,
+            trainable=True
+        )
+        self.gain = self.add_weight(
+            name="gain",
+            shape=(),
+            dtype=tf.float32,
+            trainable=True
+        )
+
+    def call(self, inputs, **kwargs):
+        mu = tf.math.reduce_mean(inputs,-1)
+        mu_shape = tf.shape(mu)
+        mu = tf.reshape(mu,[mu_shape[0],mu_shape[1],1])
+
+        sigma = tf.math.sqrt(tf.math.reduce_mean(tf.math.square(tf.math.subtract(inputs,mu)),-1))
+        sigma_shape = tf.shape(mu)
+        sigma = tf.reshape(sigma,[sigma_shape[0],sigma_shape[1],1])
+
+        output1 = tf.math.divide_no_nan(self.gain,sigma)
+        output2 = tf.math.subtract(inputs,mu)
+        output3 = tf.math.multiply(output2,output1)
+        output = tf.math.add(output3,self.bias)
+        output = self.activation(output)
+        return output

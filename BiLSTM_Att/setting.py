@@ -53,7 +53,7 @@ LOAD_TEST_PATH = [PRO_TEST_SENTENCE_PATH,PRO_TEST_SUM_PATH,PRO_TEST_LABEL_PATH]
 
 
 # log的路径，存模型的文件夹有对应关系
-LOG_PATH = "log5.txt"
+LOG_PATH = "logs/log5.txt"
 # 预定义的F1值
 F1 = 0.8
 # 训练多少次存储

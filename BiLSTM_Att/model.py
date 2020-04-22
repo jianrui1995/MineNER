@@ -8,8 +8,6 @@ import tensorflow as tf
 
 import sys
 sys.path.append(r"/home/tech/myPthonProject/MineNER/")
-import os
-print(os.getcwd())
 import BiLSTM_Att.setting_all as setting
 from preprogram_of_CCKS2019_subtask1.pre_out import OutDataset
 import preprogram_of_CCKS2019_subtask1.setting as p_setting
