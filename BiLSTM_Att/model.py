@@ -11,7 +11,7 @@ sys.path.append(r"/home/tech/myPthonProject/MineNER/")
 import BiLSTM_Att.setting_all as setting
 from preprogram_of_CCKS2019_subtask1.pre_out import OutDataset
 import preprogram_of_CCKS2019_subtask1.setting as p_setting
-from BiLSTM_Att.myself_layer import Attention
+from BiLSTM_Att.layers import Attention
 
 class Model(tf.keras.Model):
     def __init__(self):
@@ -45,7 +45,7 @@ class Model(tf.keras.Model):
 
     @tf.function
     def pretect(self,outs):
-        "测试需要的操作,只能一条，一条的输如"
+        "测试需要的操作,只能一条，一条的输入"
         outs = tf.reshape(outs,[outs.shape[1],outs.shape[2]])
         pre_label = tf.math.argmax(outs,axis=1,output_type=tf.int32)
         return pre_label
