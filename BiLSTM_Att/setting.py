@@ -56,10 +56,10 @@ LOAD_TEST_PATH = [PRO_TEST_SENTENCE_PATH,PRO_TEST_SUM_PATH,PRO_TEST_LABEL_PATH]
 LOG_PATH = "logs/log5.txt"
 # 预定义的F1值
 F1 = 0.8
-# 训练多少次存储
+# 训练多少次存储 和 训练多少次验证
 SAVED_EVERY_TIMES = 25
 # 批大小
-BATCH_SIZE = 50
+BATCH_SIZE = 5
 # 随机量
 SHU_NUM = 6
 # LSTM_1 的神经元个数

@@ -20,40 +20,33 @@ class SentenceAndSumDataset():
 
     @tf.function
     def __call__(self, *args, **kwargs):
-        sentenceANDsum_dataset = self.sentenceANDsum_dataset.map(self.conver)
+        sentenceANDsum_dataset = self.sentenceANDsum_dataset.map(lambda sen,sum: tf.py_function(self.sentence2wordvec,inp=[sen,sum],Tout=[tf.float32,tf.bool,tf.int32]))
         return sentenceANDsum_dataset
-    def conver(self,sen,sum):
 
-        def sentence2wordvec(sen,sum):
-            "将句子转换为向量，由map方法调用"
-            str_sentence = sen.numpy().decode()
-            str_sum = sum.numpy().decode()
-            int_sum = int(str_sum)
-            list_sentence = list(str_sentence)
-            unknown = [0 for _ in range(setting.WORDVEC_NUM)]
-            vec = []
-            "向量转换过程"
-            for char in list_sentence:
-                vec.append(self.word2vec_model(char))
-            "添加多余的部分，保持数据格式一致"
-            for _ in range(int_sum,setting.MAX_SUM):
-                vec.append(unknown)
-            "添加距离向量的过程"
-            f = open(setting.LOC_VEC_PATH,"r",encoding="utf8")
-            dict_loc = json.load(f)
-            f.close()
-            for i in range(setting.MAX_SUM):
-                vec[i] = np.append(vec[i],np.array(dict_loc[str(i)]))
-            "制作mask"
-            sum = [True for _ in range(int_sum)]+[False for _ in range(int_sum,setting.MAX_SUM)]
-
-            return [vec,sum]
-        vec,sum = tf.py_function(sentence2wordvec, inp=[sen, sum], Tout=[tf.float32, tf.bool])
-        vec = tf.convert_to_tensor(vec, dtype=tf.float32)
-        vec.set_shape((None,None))
-        sum = tf.convert_to_tensor(sum, dtype=tf.bool)
-        sum.set_shape((None,))
-        return [vec,sum]
+    def sentence2wordvec(self,sen,sum):
+        "将句子转换为向量，由map方法调用"
+        str_sentence = sen.numpy().decode()
+        str_sum = sum.numpy().decode()
+        int_sum = int(str_sum)
+        list_sentence = list(str_sentence)
+        unknown = [0 for _ in range(setting.WORDVEC_NUM)]
+        vec = []
+        "向量转换过程"
+        for char in list_sentence:
+            vec.append(self.word2vec_model(char))
+        "添加多余的部分，保持数据格式一致"
+        for _ in range(int_sum,setting.MAX_SUM):
+            vec.append(unknown)
+        "添加距离向量的过程"
+        f = open(setting.LOC_VEC_PATH,"r",encoding="utf8")
+        dict_loc = json.load(f)
+        f.close()
+        for i in range(setting.MAX_SUM):
+            vec[i] = np.append(vec[i],np.array(dict_loc[str(i)]))
+        "制作mask"
+        sum = [True for _ in range(int_sum)]+[False for _ in range(int_sum,setting.MAX_SUM)]
+        tf.convert_to_tensor
+        return [vec,sum,int_sum]
 
     def word2vec_model(self,char):
         "使用word2vec模型转换字向量"
@@ -80,5 +73,5 @@ class SentenceAndSumDataset():
 
 if __name__ == "__main__":
     sen = SentenceAndSumDataset(setting.PRO_TRAIN_SENTENCE_PATH,setting.PRO_TRAIN_SUM_PATH)
-    for data in sen().take(1):
+    for data in sen().batch(1).take(1):
         print(data)

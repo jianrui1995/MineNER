@@ -13,19 +13,24 @@ class model(tf.keras.Model):
         self.x1 = tf.keras.layers.Dense(10,activation="relu")
         self.x2 = tf.keras.layers.Dense(10,activation="relu")
         self.pre = tf.keras.layers.Dense(3,activation="softmax")
+        self.test = tf.keras.layers.Lambda(self.func)
     @tf.function
     def call(self, inputs, training=None, mask=None):
         out = self.x1(inputs)
         out = self.x2(out)
+        out = self.test([out,out])
         out = self.pre(out)
-        return out
+        return [out,out,out]
+
+    def func(self,inputs):
+        return inputs[0]
 
 def train():
     re = ra()
     mo = model()
     mo.compile(optimizer=tf.keras.optimizers.Adam(1e-3),
-               loss=MineLoss(from_logits=False),
-               metrics=[MineMetric()])
+               loss=[None,MineLoss(from_logits=False),MineLoss(from_logits=False)],
+               metrics=[[],[MineMetric()],[MineMetric()]])
     mo.fit(re().batch(4),
            epochs=5,
            validation_data=re().batch(4),

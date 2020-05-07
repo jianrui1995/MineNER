@@ -14,4 +14,9 @@ class En_Cross(tf.keras.losses.Loss):
         loss = tf.math.reduce_sum(outs)
         return -loss
 
+class Loss_Return_0(tf.keras.losses.Loss):
+    def __init__(self):
+        super(Loss_Return_0,self).__init__()
 
+    def call(self,y_true,y_pred):
+        return 0.0
