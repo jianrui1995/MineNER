@@ -5,12 +5,13 @@
 import tensorflow as tf
 import sys
 sys.path.append(r"/home/tech/myPthonProject/MineNER/")
-import BiLSTM_Att.setting as setting
+import BiLSTM_Att.setting_model_LN as setting
 from BiLSTM_Att.layers import Attention,LayerNormalization
 from preprogram_of_CCKS2019_subtask1.pre_out import OutDataset
 from BiLSTM_Att.losses import En_Cross,Loss_Return_0
 import preprogram_of_CCKS2019_subtask1.setting as p_setting
 from BiLSTM_Att.metrics import F1
+from BiLSTM_Att.callbacks import Save
 
 class Model(tf.keras.Model):
     def __init__(self):
@@ -60,6 +61,7 @@ if __name__ == "__main__":
     train_dataset = OutDataset(*setting.LOAD_NEW_PATH)().batch(setting.BATCH_SIZE,drop_remainder=True)
     model = Model()
     op = tf.keras.optimizers.Adam(1e-4)
+    save = Save(save_per_epoch=setting.SAVED_EVERY_TIMES,save_directory=setting.MODEL_PATH_SAVE,save_name=setting.MODEL_NAME_SAVE,restore_path=None,save_num=setting.STRAT_NUM)
     model.compile(
         optimizer=op,
         loss=[En_Cross(),Loss_Return_0()],
@@ -71,6 +73,7 @@ if __name__ == "__main__":
         epochs=setting.EPOCH,
         verbose=1,
         validation_data=test_dataset,
-        validation_freq=setting.SAVED_EVERY_TIMES
+        validation_freq=setting.SAVED_EVERY_TIMES,
+        callbacks=[save,tf.keras.callbacks.TensorBoard(setting.LOG_dir)]
     )
 
