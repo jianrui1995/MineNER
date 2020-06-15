@@ -6,3 +6,4 @@ model/bilstm-att_4
 model/bilstm-att_5
 model/bilstm-att_all
 model/bilstm-att-LN/*
+BiLSTM_Att/result/model-att-LN/*

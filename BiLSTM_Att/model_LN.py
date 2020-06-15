@@ -31,7 +31,7 @@ class Model(tf.keras.Model):
         self.Att = Attention(units=p_setting.LABEL_SUM, trainable=True)
         self.Prepare_For_Metric = tf.keras.layers.Lambda(self.prepare_for_metric)
 
-    # @tf.function()
+    @tf.function()
     def call(self, inputs, training=None, mask=None):
 
         output = self.BiLSTM_1(inputs[0],mask=inputs[1])
