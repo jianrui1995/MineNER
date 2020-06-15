@@ -57,8 +57,8 @@ class Model(tf.keras.Model):
         return tf.math.multiply(out,mask)
 
 if __name__ == "__main__":
-    test_dataset = OutDataset(*setting.LOAD_TEST_PATH)().batch(setting.BATCH_SIZE,drop_remainder=True)
-    train_dataset = OutDataset(*setting.LOAD_NEW_PATH)().batch(setting.BATCH_SIZE,drop_remainder=True)
+    test_dataset = OutDataset(*setting.LOAD_TEST_PATH)().shuffle(100).batch(setting.BATCH_SIZE,drop_remainder=True).prefetch(3)
+    train_dataset = OutDataset(*setting.LOAD_NEW_PATH)().batch(setting.BATCH_SIZE,drop_remainder=True).prefetch(3)
     model = Model()
     op = tf.keras.optimizers.Adam(1e-4)
     save = Save(save_per_epoch=setting.SAVED_EVERY_TIMES,save_directory=setting.MODEL_PATH_SAVE,save_name=setting.MODEL_NAME_SAVE,restore_path=None,save_num=setting.STRAT_NUM)

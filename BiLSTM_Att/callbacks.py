@@ -1,6 +1,6 @@
 # @Time: 2020/5/11 22:28
 # @Author: R.Jian
-# @Note: 找回类
+# @Note: 召回类
 
 import tensorflow as tf
 

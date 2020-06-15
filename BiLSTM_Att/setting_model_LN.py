@@ -63,7 +63,7 @@ F1 = 0.8
 # 训练多少次存储 和 训练多少次验证
 SAVED_EVERY_TIMES = 25
 # 批大小
-BATCH_SIZE = 5
+BATCH_SIZE = 40
 # 随机量
 SHU_NUM = 6
 # LSTM_1 的神经元个数

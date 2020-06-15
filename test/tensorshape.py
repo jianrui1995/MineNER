@@ -6,6 +6,5 @@
 import numpy as np
 import time
 
-for i in range(10):
-    print(i)
-    time.sleep(10)
+str1 = "a   b"
+print(str1.split())
