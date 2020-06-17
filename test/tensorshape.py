@@ -5,6 +5,8 @@
 
 import numpy as np
 import time
+import tensorflow as tf
 
-str1 = "a   b"
-print(str1.split())
+a = tf.ones([2,2,2])
+b = tf.constant([1.0,2.0])
+print(tf.math.multiply(a,b)+b)

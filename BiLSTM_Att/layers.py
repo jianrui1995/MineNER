@@ -56,26 +56,27 @@ class LayerNormalization(tf.keras.layers.Layer):
     def build(self, input_shape):
         self.bias = self.add_weight(
             name="bias",
-            shape=(),
+            shape=[input_shape[-1]],
             dtype=tf.float32,
             trainable=True
         )
         self.gain = self.add_weight(
             name="gain",
-            shape=(),
+            shape=[input_shape[-1]],
             dtype=tf.float32,
             trainable=True
         )
 
     def call(self, inputs, **kwargs):
+        # 求平均
         mu = tf.math.reduce_mean(inputs,-1)
         mu_shape = tf.shape(mu)
         mu = tf.reshape(mu,[mu_shape[0],mu_shape[1],1])
-
+        # 算方差
         sigma = tf.math.sqrt(tf.math.reduce_mean(tf.math.square(tf.math.subtract(inputs,mu)),-1))
-        sigma_shape = tf.shape(mu)
+        sigma_shape = tf.shape(sigma)
         sigma = tf.reshape(sigma,[sigma_shape[0],sigma_shape[1],1])
-
+        # 【batch，timestep，1】
         output1 = tf.math.divide_no_nan(self.gain,sigma)
         output2 = tf.math.subtract(inputs,mu)
         output3 = tf.math.multiply(output2,output1)
