@@ -15,9 +15,9 @@ class ra():
             self.y[i][self.z[i]] = 1
 
     def __call__(self, *args, **kwargs):
-        return tf.data.Dataset.from_tensor_slices((self.x,(self.y,self.m)))
+        return tf.data.Dataset.from_tensor_slices((self.x,(self.y,self.y,self.y)))
 
-
+tf.keras.callbacks.LearningRateScheduler
 if __name__ == "__main__":
     r = ra()
     for data in r():

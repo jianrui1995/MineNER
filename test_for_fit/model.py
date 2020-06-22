@@ -6,9 +6,11 @@ import tensorflow as tf
 from test_for_fit.dataset import ra
 from test_for_fit.Losses import MineLoss
 from test_for_fit.Metrics import MineMetric
+from test_for_fit.callback import mycallback
+from visualdl import LogWriter
 
 class model(tf.keras.Model):
-    def __init__(self):
+    def __init__(self,):
         super(model,self).__init__()
         self.x1 = tf.keras.layers.Dense(10,activation="relu")
         self.x2 = tf.keras.layers.Dense(10,activation="relu")
@@ -29,12 +31,13 @@ def train():
     re = ra()
     mo = model()
     mo.compile(optimizer=tf.keras.optimizers.Adam(1e-3),
-               loss=[None,MineLoss(from_logits=False),MineLoss(from_logits=False)],
+               loss=[MineLoss(from_logits=False),MineLoss(from_logits=False),MineLoss(from_logits=False)],
                metrics=[[],[MineMetric()],[MineMetric()]])
     mo.fit(re().batch(4),
            epochs=5,
            validation_data=re().batch(4),
-           use_multiprocessing=True)
+           callbacks=[mycallback()],
+           verbose=0)
 
 
 
