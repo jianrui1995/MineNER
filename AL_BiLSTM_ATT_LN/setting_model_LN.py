@@ -7,9 +7,9 @@
 # @NOTE    : 模型训练的相关设置
 
 # epoch的开始索引
-INIT_EPOCH = 50
+INIT_EPOCH = 0
 # epoch的结束索引
-EPOCH =100
+EPOCH =2
 # 预测结果的存储路径：
 TREAIN_SAVE_PATH = "result.txt"
 # 学习率
@@ -24,11 +24,11 @@ MODEL_NAME_SAVE = "bilstm_att_LN"
 STRAT_NUM = 0
 
 # 模型的读取路径
-MODEL_PATH_RESTORE = "../model/bilstm-att-LN/"
+MODEL_PATH_RESTORE = None
 # 模型读取的名字
-MODEL_NAME_RESTORE = "bilstm_att_LN"
+MODEL_NAME_RESTORE = None
 # 模型读取的序号
-MODEL_NUM_RESTORE = MODEL_PATH_RESTORE+MODEL_NAME_RESTORE+"-49"
+MODEL_NUM_RESTORE = None
 
 # 训练句子的路径  选中
 PRO_TRAIN_NEW_SENTENCE_PATH = '../MNLP_Select/data/new_train_sentence.txt'
@@ -65,7 +65,7 @@ F1 = 0.8
 # 训练多少次存储 和 训练多少次验证
 SAVED_EVERY_TIMES = 10
 # 批大小
-BATCH_SIZE = 30
+BATCH_SIZE = 4
 # 随机量
 SHU_NUM = 6
 # LSTM_1 的神经元个数
@@ -75,3 +75,7 @@ LISM_2_UNTIS = 150
 # LSTM_3 的神经元个数
 LISM_3_UNTIS = 150
 
+# 主动学习，dense_1的神经元个数
+LL_DENSE_1 = 300
+# 计算损失函数的边际量
+THETA = 2

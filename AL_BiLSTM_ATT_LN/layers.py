@@ -33,10 +33,10 @@ class Attention(tf.keras.layers.Layer):
         sqe = tf.sqrt(tf.cast(2*input_shape[-1],tf.float32))
         output = tf.math.multiply(output,tf.math.reciprocal(sqe))
         alpha = tf.keras.activations.softmax(output,axis=-1)
-        if isfinal:
-            return alpha
         # output = tf.reshape(alpha,[input_shape[0],input_shape[1],-1])
         output = tf.tensordot(output,self.att_keral,[(rank-1),(0)])
+        if isfinal:
+            return alpha,output
         return output
 
 class LayerNormalization(tf.keras.layers.Layer):
@@ -84,3 +84,25 @@ class LayerNormalization(tf.keras.layers.Layer):
         # tf.print("output", tf.reduce_sum(output))
         # tf.print()
         return output
+
+class LossLearn_AveragePool(tf.keras.layers.Layer):
+    def __init__(self,dense_1_units):
+        super(LossLearn_AveragePool,self).__init__()
+        self.dense_1 = tf.keras.layers.Dense(dense_1_units,activation="relu")
+        "输出的dense加激活函数"
+        self.dense_out = tf.keras.layers.Dense(1,activation="relu")
+
+    def build(self, input_shape):
+        pass
+
+    def call(self, inputs, mask,**kwargs):
+        "[batch,timestep,dim] [batch,timestep]"
+        mask_int = tf.cast(mask,tf.float32)
+        output = tf.math.multiply(inputs,tf.reshape(mask_int,[tf.shape(mask_int)[0],tf.shape(mask_int)[1],1]))
+        sum_output = tf.math.reduce_sum(output,1) #[batch,dim]
+        sum_mask = tf.math.reduce_sum(mask_int,-1) #[batch,1]
+        output = tf.math.divide(sum_output,tf.reshape(sum_mask,[tf.shape(sum_mask)[0],1])) #[batch,dim]
+        output = self.dense_1(output)
+        output = self.dense_out(output)
+        return output
+

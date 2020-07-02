@@ -8,15 +8,13 @@ from visualdl import LogWriter
 class mycallback(tf.keras.callbacks.Callback):
     def __init__(self):
         super(mycallback,self).__init__()
-        self.total_loss = 0.0
+
 
     def on_batch_end(self, batch, logs=None):
-        print("batch")
-        print(logs)
+        pass
 
     def on_epoch_end(self, epoch, logs=None):
-        print("epoch")
-        print(logs)
+        tf.print("Apoch",epoch)
 
     def on_train_end(self, logs=None):
         pass

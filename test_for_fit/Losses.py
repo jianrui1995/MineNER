@@ -5,8 +5,8 @@
 import tensorflow as tf
 
 class MineLoss(tf.keras.losses.Loss):
-    def __init__(self,from_logits):
-        super(MineLoss,self).__init__(reduction=tf.keras.losses.Reduction.SUM_OVER_BATCH_SIZE)
+    def __init__(self,from_logits,name):
+        super(MineLoss,self).__init__(reduction=tf.keras.losses.Reduction.SUM_OVER_BATCH_SIZE,name=name)
         self.from_logits = from_logits
 
     def call(self, y_true, y_pred):

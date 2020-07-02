@@ -11,20 +11,20 @@ from preprogram_of_CCKS2019_subtask1.pre_out import OutDataset
 from BiLSTM_Att.losses import En_Cross,Loss_Return_0
 import preprogram_of_CCKS2019_subtask1.setting as p_setting
 from BiLSTM_Att.metrics import F1
-from BiLSTM_Att.callbacks import Save
+from BiLSTM_Att.callbacks import Save,VisualDL
 
 class Model(tf.keras.Model):
     def __init__(self):
         super(Model,self).__init__()
-        LSTM_1 = tf.keras.layers.LSTM(setting.LISM_1_UNTIS,return_sequences=True,activation=tf.keras.activations.linear)
+        LSTM_1 = tf.keras.layers.LSTM(setting.LISM_1_UNTIS,return_sequences=True,activation="tanh")
         self.BiLSTM_1 = tf.keras.layers.Bidirectional(LSTM_1,merge_mode="concat")
-        self.LN_1 = LayerNormalization()
+        # self.LN_1 = LayerNormalization()
 
-        LSTM_2 = tf.keras.layers.LSTM(setting.LISM_1_UNTIS, return_sequences=True,activation=tf.keras.activations.linear)
+        LSTM_2 = tf.keras.layers.LSTM(setting.LISM_1_UNTIS, return_sequences=True,activation="tanh")
         self.BiLSTM_2 = tf.keras.layers.Bidirectional(LSTM_2, merge_mode="concat")
         self.LN_2 = LayerNormalization()
 
-        LSTM_3 = tf.keras.layers.LSTM(setting.LISM_1_UNTIS, return_sequences=True,activation=tf.keras.activations.linear)
+        LSTM_3 = tf.keras.layers.LSTM(setting.LISM_1_UNTIS, return_sequences=True,activation="tanh")
         self.BiLSTM_3 = tf.keras.layers.Bidirectional(LSTM_3, merge_mode="concat")
         self.LN_3 = LayerNormalization()
 
@@ -33,18 +33,22 @@ class Model(tf.keras.Model):
 
     @tf.function()
     def call(self, inputs, training=None, mask=None):
+        # tf.print()
+        output1 = self.BiLSTM_1(inputs[0],mask=inputs[1])
+        # tf.print("bilstm",output1)
+        # tf.print()
+        # output1 = self.LN_1(output1)
+        output = self.Att(output1, isfinal=False)
+        output = tf.concat((output1,output),axis=-1)
 
-        output = self.BiLSTM_1(inputs[0],mask=inputs[1])
-        output = self.LN_1(output)
-        output = self.Att(output, isfinal=False)
+        output1 = self.BiLSTM_2(output,mask=inputs[1])
+        output1 = self.LN_2(output1)
+        output = self.Att(output1, isfinal=False)
+        output = tf.concat((output1,output),axis=-1)
 
-        output = self.BiLSTM_2(output,mask=inputs[1])
-        output = self.LN_2(output)
-        output = self.Att(output, isfinal=False)
-
-        output = self.BiLSTM_3(output,mask=inputs[1])
-        output = self.LN_3(output)
-        output = self.Att(output, isfinal=True)
+        output1 = self.BiLSTM_3(output,mask=inputs[1])
+        output1 = self.LN_3(output1)
+        output = self.Att(output1, isfinal=True)
 
         output_for_metric = self.Prepare_For_Metric([output,inputs[1]])
 
@@ -60,8 +64,9 @@ if __name__ == "__main__":
     test_dataset = OutDataset(*setting.LOAD_TEST_PATH)().shuffle(100).batch(setting.BATCH_SIZE,drop_remainder=True).prefetch(3)
     train_dataset = OutDataset(*setting.LOAD_NEW_PATH)().batch(setting.BATCH_SIZE,drop_remainder=True).prefetch(3)
     model = Model()
-    op = tf.keras.optimizers.Adam(1e-4)
-    save = Save(save_per_epoch=setting.SAVED_EVERY_TIMES,save_directory=setting.MODEL_PATH_SAVE,save_name=setting.MODEL_NAME_SAVE,restore_path=None,save_num=setting.STRAT_NUM)
+    op = tf.keras.optimizers.Adam(setting.LEARN_RATE)
+    save = Save(save_per_epoch=setting.SAVED_EVERY_TIMES,save_directory=setting.MODEL_PATH_SAVE,save_name=setting.MODEL_NAME_SAVE,restore_path=setting.MODEL_NUM_RESTORE)
+    logdir = VisualDL("./result",validation_every_times=setting.SAVED_EVERY_TIMES)
     model.compile(
         optimizer=op,
         loss=[En_Cross(),Loss_Return_0()],
@@ -72,8 +77,11 @@ if __name__ == "__main__":
         x=train_dataset,
         epochs=setting.EPOCH,
         verbose=1,
+        initial_epoch=setting.INIT_EPOCH,
         validation_data=test_dataset,
         validation_freq=setting.SAVED_EVERY_TIMES,
-        callbacks=[save,tf.keras.callbacks.TensorBoard(setting.LOG_dir)]
+        callbacks=[save,logdir]
     )
+
+
 
