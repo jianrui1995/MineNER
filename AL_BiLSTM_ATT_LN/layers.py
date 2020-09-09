@@ -106,3 +106,46 @@ class LossLearn_AveragePool(tf.keras.layers.Layer):
         output = self.dense_out(output)
         return output
 
+class LossLearning_Cov(tf.keras.layers.Layer):
+    def __init__(self,filters,kernel_size,strides,dense_1_units):
+        super(LossLearning_Cov,self).__init__()
+        self._filters = filters
+        self._kernel_size = kernel_size
+        self._strides = strides
+        self.cov = tf.keras.layers.Conv2D(
+            filters=self._filters,
+            kernel_size=self._kernel_size,
+            strides=self._strides,
+            padding="valid",
+            data_format="channels_last",
+            activation=tf.keras.activations.relu,
+            use_bias=True
+        )
+        self.dense_1 = tf.keras.layers.Dense(dense_1_units, activation="relu")
+        self.dense_out = tf.keras.layers.Dense(1,activation="relu")
+
+    def call(self, inputs,mask, **kwargs):
+        '''
+
+        :param inputs:[x,mask] [dim,timestep,dim] float32  [dim,timestep] int32
+        :param kwargs:
+        :return:
+        '''
+        input_shape = tf.shape(inputs)
+        inputs = tf.transpose(tf.reshape(inputs,[input_shape[0],1,input_shape[1],input_shape[2]]),[0,2,3,1])
+        out = self.cov(inputs)
+        out = tf.transpose(out,[0,3,1,2])
+        out = out[:,:,:self._strides[0]-self._kernel_size[0],:]
+        mask = mask[:,self._kernel_size[0]-self._strides[0]:self._strides[0]-self._kernel_size[0]]
+        out_shape = tf.shape(out)
+        mask_shape = tf.shape(mask)
+        mask = tf.reshape(mask,[mask_shape[0],1,mask_shape[1],1])
+        mask = tf.tile(mask,[1,out_shape[1],1,out_shape[3]])
+        out = tf.math.multiply(out,tf.cast(mask,tf.float32))
+        out = tf.reduce_sum(out,[-2])
+        out_shape = tf.shape(out)
+        out = tf.reshape(out,[out_shape[0],1017])
+        out = self.dense_1(out)
+        out = self.dense_out(out)
+        return out
+

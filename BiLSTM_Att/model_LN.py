@@ -37,7 +37,7 @@ class Model(tf.keras.Model):
         output1 = self.BiLSTM_1(inputs[0],mask=inputs[1])
         # tf.print("bilstm",output1)
         # tf.print()
-        # output1 = self.LN_1(output1)
+        output1 = self.LN_1(output1)
         output = self.Att(output1, isfinal=False)
         output = tf.concat((output1,output),axis=-1)
 

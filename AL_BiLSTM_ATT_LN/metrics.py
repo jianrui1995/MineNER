@@ -26,11 +26,11 @@ class F1(tf.keras.metrics.Metric):
             dtype=tf.float32
         )
 
-    def update_state(self,y_true,y_pred, *args, **kwargs):
+    def update_state(self,y_true,y_pre, *args, **kwargs):
         y_true_0 = tf.math.argmax(y_true,axis=-1,output_type=tf.int32)
         self.rel.assign_add(tf.math.count_nonzero(y_true_0,dtype=tf.float32))
 
-        y_pred_0 = y_pred
+        y_pred_0 = y_pre
         self.pre.assign_add(tf.math.count_nonzero(y_pred_0,dtype=tf.float32))
 
         y_subtract = tf.math.subtract(y_true_0,y_pred_0)

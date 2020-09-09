@@ -7,13 +7,13 @@
 # @NOTE    : 模型训练的相关设置
 
 # epoch的开始索引
-INIT_EPOCH = 50
+INIT_EPOCH = 140
 # epoch的结束索引
-EPOCH =100
+EPOCH =170
 # 预测结果的存储路径：
 TREAIN_SAVE_PATH = "result.txt"
 # 学习率
-LEARN_RATE = 1e-3
+LEARN_RATE = 1e-4
 
 
 # 模型的存储路径
@@ -28,7 +28,7 @@ MODEL_PATH_RESTORE = "../model/bilstm-att-LN/"
 # 模型读取的名字
 MODEL_NAME_RESTORE = "bilstm_att_LN"
 # 模型读取的序号
-MODEL_NUM_RESTORE = MODEL_PATH_RESTORE+MODEL_NAME_RESTORE+"-49"
+MODEL_NUM_RESTORE = MODEL_PATH_RESTORE+MODEL_NAME_RESTORE+"-139"
 
 # 训练句子的路径  选中
 PRO_TRAIN_NEW_SENTENCE_PATH = '../MNLP_Select/data/new_train_sentence.txt'
@@ -63,7 +63,7 @@ LOG_dir = "result/model-att-LN"
 # 预定义的F1值
 F1 = 0.8
 # 训练多少次存储 和 训练多少次验证
-SAVED_EVERY_TIMES = 10
+SAVED_EVERY_TIMES = 5
 # 批大小
 BATCH_SIZE = 30
 # 随机量

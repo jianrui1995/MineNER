@@ -18,6 +18,7 @@ class Attention(tf.keras.layers.Layer):
 
     def build(self, input_shape):
         tensor_shape = tf.TensorShape(input_shape)
+        # [type,dim]
         self.att_keral=self.add_weight(
             "att_keral",
             shape=[self.units,tensor_shape[-1]],
@@ -26,8 +27,11 @@ class Attention(tf.keras.layers.Layer):
         )
 
     def call(self, inputs,isfinal=False, **kwargs):
+        # [batch,time step,dim]
         input_shape = inputs.shape
+        # 3
         rank = len(input_shape)
+
         output = tf.tensordot(inputs,self.att_keral,axes=[(rank-1),(1)])
         # output = tf.reshape(output,[-1,output.shape[-1]])
         sqe = tf.sqrt(tf.cast(2*input_shape[-1],tf.float32))

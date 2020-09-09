@@ -31,7 +31,7 @@ class OMineMetric(tf.keras.metrics.Metric):
         self.mine.assign_add(self.one)
 
     def result(self):
-        return self.mine.assign_add(self.one)
+        return [self.mine.assign_add(self.one),self.mine.assign_add(self.one)]
 
     def reset_states(self):
         self.mine.assign(0.0)

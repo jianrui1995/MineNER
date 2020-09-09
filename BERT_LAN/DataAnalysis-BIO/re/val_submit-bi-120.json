@@ -1,0 +1,5459 @@
+{
+    "validate_V2_1.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 26,
+            "end_pos": 32,
+            "name": "f-35战斗机"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 45,
+            "end_pos": 51,
+            "name": "f-35战斗机"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 64,
+            "end_pos": 74,
+            "name": "f-35b战斗机轮胎性能"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 80,
+            "end_pos": 93,
+            "name": "f-35b和f-35c战斗机"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 95,
+            "end_pos": 102,
+            "name": "空中受油头锥破损"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 110,
+            "end_pos": 115,
+            "name": "f-35a战"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 119,
+            "end_pos": 124,
+            "name": "机炮射击精度"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 148,
+            "end_pos": 150,
+            "name": "可靠性"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 160,
+            "end_pos": 166,
+            "name": "联合攻击战斗机"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 168,
+            "end_pos": 174,
+            "name": "作战需求文件》"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 187,
+            "end_pos": 189,
+            "name": "可用率"
+        }
+    ],
+    "validate_V2_2.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 54,
+            "end_pos": 57,
+            "name": "例行维护"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 134,
+            "end_pos": 137,
+            "name": "网络协议"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 139,
+            "end_pos": 147,
+            "name": "卫星和射频通信系统"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 150,
+            "end_pos": 155,
+            "name": "战术机动通信"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 157,
+            "end_pos": 162,
+            "name": "海事通信系统"
+        }
+    ],
+    "validate_V2_3.json": [
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 47,
+            "end_pos": 54,
+            "name": "美国关键太空资产"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 58,
+            "end_pos": 63,
+            "name": "美国太空能力"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 97,
+            "end_pos": 100,
+            "name": "太空领域"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 102,
+            "end_pos": 105,
+            "name": "信息共享"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 126,
+            "end_pos": 127,
+            "name": "新兴"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 132,
+            "end_pos": 135,
+            "name": "太空威胁"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 150,
+            "end_pos": 151,
+            "name": "美军"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 158,
+            "end_pos": 166,
+            "name": "美国及联合作战人员"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 172,
+            "end_pos": 175,
+            "name": "太空领域"
+        }
+    ],
+    "validate_V2_4.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 14,
+            "end_pos": 25,
+            "name": "“巨型钻地弹”(mop)"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 46,
+            "end_pos": 47,
+            "name": "美军"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 67,
+            "end_pos": 68,
+            "name": "列编"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 119,
+            "end_pos": 122,
+            "name": "空投试验"
+        }
+    ],
+    "validate_V2_5.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 42,
+            "end_pos": 51,
+            "name": "超高速射弹(hvp)"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 72,
+            "end_pos": 73,
+            "name": "速度"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 75,
+            "end_pos": 78,
+            "name": "普通炮管"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 116,
+            "end_pos": 119,
+            "name": "移交计划"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 134,
+            "end_pos": 137,
+            "name": "核心技术"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 156,
+            "end_pos": 159,
+            "name": "威胁目标"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 166,
+            "end_pos": 169,
+            "name": "验证试验"
+        }
+    ],
+    "validate_V2_6.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 29,
+            "end_pos": 42,
+            "name": "微型撞击杀伤导弹受控飞行试验"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 49,
+            "end_pos": 50,
+            "name": "弹体"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 52,
+            "end_pos": 55,
+            "name": "电子设备"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 63,
+            "end_pos": 63,
+            "name": "长"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 70,
+            "end_pos": 70,
+            "name": "重"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 83,
+            "end_pos": 84,
+            "name": "火炮"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 86,
+            "end_pos": 88,
+            "name": "火箭炮"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 90,
+            "end_pos": 92,
+            "name": "迫击炮"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 94,
+            "end_pos": 96,
+            "name": "机动性"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 100,
+            "end_pos": 104,
+            "name": "近距离目标"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 115,
+            "end_pos": 116,
+            "name": "费用"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 120,
+            "end_pos": 121,
+            "name": "精度"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 125,
+            "end_pos": 128,
+            "name": "后勤保障"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 144,
+            "end_pos": 147,
+            "name": "美国陆军"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 151,
+            "end_pos": 157,
+            "name": "技术成熟度等级"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 163,
+            "end_pos": 164,
+            "name": "机理"
+        }
+    ],
+    "validate_V2_7.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 10,
+            "end_pos": 28,
+            "name": "“反潜战持续跟踪无人艇”(actuv)"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 36,
+            "end_pos": 47,
+            "name": "“海上猎人”技术验证装置"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 66,
+            "end_pos": 71,
+            "name": "“海上猎人”"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 91,
+            "end_pos": 112,
+            "name": "“海上系统空中拖曳伞平台”(alons)样机"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 121,
+            "end_pos": 124,
+            "name": "联合试验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 139,
+            "end_pos": 144,
+            "name": "排雷有效载荷"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 165,
+            "end_pos": 168,
+            "name": "海上试验"
+        }
+    ],
+    "validate_V2_8.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 25,
+            "end_pos": 30,
+            "name": "导弹拦截试验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 37,
+            "end_pos": 42,
+            "name": "中程弹道导弹"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 60,
+            "end_pos": 76,
+            "name": "“宙斯盾”岸上导弹防御试验综合设施"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 96,
+            "end_pos": 111,
+            "name": "“标准”-3block2a拦截弹"
+        }
+    ],
+    "validate_V2_9.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 29,
+            "end_pos": 41,
+            "name": "lav-25a2轻型装甲车"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 43,
+            "end_pos": 48,
+            "name": "空投认证试验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 56,
+            "end_pos": 61,
+            "name": "作战战术程序"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 107,
+            "end_pos": 110,
+            "name": "维修工具"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 114,
+            "end_pos": 117,
+            "name": "保障装备"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 119,
+            "end_pos": 122,
+            "name": "空投试验"
+        }
+    ],
+    "validate_V2_10.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 5,
+            "end_pos": 17,
+            "name": "新型“谢波德”亚轨道飞行器"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 33,
+            "end_pos": 36,
+            "name": "最高高度"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 44,
+            "end_pos": 45,
+            "name": "上升"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 48,
+            "end_pos": 49,
+            "name": "速度"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 61,
+            "end_pos": 62,
+            "name": "乘员"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 66,
+            "end_pos": 68,
+            "name": "降落伞"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 76,
+            "end_pos": 79,
+            "name": "推进模块"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 87,
+            "end_pos": 90,
+            "name": "垂直着陆"
+        }
+    ],
+    "validate_V2_11.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 5,
+            "end_pos": 14,
+            "name": "p-8a海上侦察飞机"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 27,
+            "end_pos": 35,
+            "name": "[SPACE]”(lvc)环境"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 42,
+            "end_pos": 47,
+            "name": "设备认证试验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 91,
+            "end_pos": 96,
+            "name": "导航模拟设备"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 102,
+            "end_pos": 107,
+            "name": "真实飞行试验"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 131,
+            "end_pos": 134,
+            "name": "美国海军"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 137,
+            "end_pos": 143,
+            "name": "f-35战斗机"
+        }
+    ],
+    "validate_V2_12.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 10,
+            "end_pos": 27,
+            "name": "[SPACE]“追梦者”可重复使用航天运载飞行器"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 45,
+            "end_pos": 57,
+            "name": "空中投放[UNK]滑翔着陆飞行试验"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 72,
+            "end_pos": 78,
+            "name": "飞行器接地速度"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 89,
+            "end_pos": 94,
+            "name": "着陆滑行距离"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 116,
+            "end_pos": 119,
+            "name": "飞行软件"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 121,
+            "end_pos": 124,
+            "name": "控制系统"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 140,
+            "end_pos": 148,
+            "name": "[SPACE]“追梦者”货运型"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 175,
+            "end_pos": 178,
+            "name": "9号风洞"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 181,
+            "end_pos": 183,
+            "name": "马赫数"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 187,
+            "end_pos": 188,
+            "name": "马赫"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 196,
+            "end_pos": 201,
+            "name": "高速风洞试验"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 207,
+            "end_pos": 210,
+            "name": "气动性能"
+        }
+    ],
+    "validate_V2_13.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 42,
+            "end_pos": 58,
+            "name": "go1惰性试验件系留运载飞行试验项"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 68,
+            "end_pos": 79,
+            "name": "go1-ita空射型火箭"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 88,
+            "end_pos": 94,
+            "name": "c-20a飞机"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 155,
+            "end_pos": 158,
+            "name": "动力飞行"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 184,
+            "end_pos": 185,
+            "name": "模型"
+        }
+    ],
+    "validate_V2_14.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 23,
+            "end_pos": 36,
+            "name": "[SPACE]“烈火[SPACE]”-5洲际弹道导弹"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 58,
+            "end_pos": 64,
+            "name": "公路机动发射站"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 68,
+            "end_pos": 71,
+            "name": "飞行距离"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 80,
+            "end_pos": 83,
+            "name": "飞行时间"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 109,
+            "end_pos": 112,
+            "name": "飞行试验"
+        }
+    ],
+    "validate_V2_15.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 9,
+            "end_pos": 12,
+            "name": "火星任务"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 17,
+            "end_pos": 35,
+            "name": "小型核动力系统[SPACE]“kilopower[SPACE]”"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 62,
+            "end_pos": 66,
+            "name": "未来空间任务"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 76,
+            "end_pos": 77,
+            "name": "火星"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 81,
+            "end_pos": 86,
+            "name": "行星表面任务"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 131,
+            "end_pos": 134,
+            "name": "全面测试"
+        }
+    ],
+    "validate_V2_16.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 27,
+            "end_pos": 48,
+            "name": "陆军作战人员信息网络战术(win-t)项目评"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 77,
+            "end_pos": 80,
+            "name": "作战效能"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 82,
+            "end_pos": 86,
+            "name": "作战适用性"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 88,
+            "end_pos": 91,
+            "name": "生存能力"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 108,
+            "end_pos": 114,
+            "name": "其战术网络元素"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 116,
+            "end_pos": 117,
+            "name": "大小"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 119,
+            "end_pos": 121,
+            "name": "复杂性"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 139,
+            "end_pos": 143,
+            "name": "作战适用性"
+        }
+    ],
+    "validate_V2_17.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 26,
+            "end_pos": 47,
+            "name": "“火神”2.1(vulcain2.1)发动机"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 49,
+            "end_pos": 52,
+            "name": "点火试验"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 80,
+            "end_pos": 82,
+            "name": "主动力"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 97,
+            "end_pos": 98,
+            "name": "推力"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 100,
+            "end_pos": 102,
+            "name": "混合比"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 104,
+            "end_pos": 106,
+            "name": "推进剂"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 124,
+            "end_pos": 137,
+            "name": "”-6上面级vinci发动机"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 185,
+            "end_pos": 192,
+            "name": "点火能力演示验证"
+        }
+    ],
+    "validate_V2_18.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 24,
+            "end_pos": 31,
+            "name": "kc-46加油机"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 47,
+            "end_pos": 50,
+            "name": "加油速度"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 67,
+            "end_pos": 70,
+            "name": "油量传输"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 100,
+            "end_pos": 103,
+            "name": "认证试验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 105,
+            "end_pos": 111,
+            "name": "规范符合性试验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 145,
+            "end_pos": 148,
+            "name": "f-16"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 150,
+            "end_pos": 155,
+            "name": "f/a-18"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 157,
+            "end_pos": 161,
+            "name": "av-8b"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 163,
+            "end_pos": 166,
+            "name": "c-17"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 168,
+            "end_pos": 171,
+            "name": "a-10"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 173,
+            "end_pos": 177,
+            "name": "kc-10"
+        }
+    ],
+    "validate_V2_19.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 61,
+            "end_pos": 72,
+            "name": "陆军战术导弹系统飞行试验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 97,
+            "end_pos": 108,
+            "name": "高机动火箭炮系统发射装置"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 112,
+            "end_pos": 115,
+            "name": "飞行距离"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 124,
+            "end_pos": 127,
+            "name": "目标区域"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 131,
+            "end_pos": 136,
+            "name": "近距离传感器"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 138,
+            "end_pos": 144,
+            "name": "定炸高起爆能力"
+        }
+    ],
+    "validate_V2_20.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 16,
+            "end_pos": 28,
+            "name": "一体化防空反导作战指挥系统"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 55,
+            "end_pos": 58,
+            "name": "研制试验"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 102,
+            "end_pos": 107,
+            "name": "指挥控制系统"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 110,
+            "end_pos": 112,
+            "name": "营连级"
+        }
+    ],
+    "validate_V2_21.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 9,
+            "end_pos": 33,
+            "name": "an/dvs-1海岸战场侦察与分析机载水雷探测系统"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 35,
+            "end_pos": 42,
+            "name": "mq-8b无人机"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 53,
+            "end_pos": 56,
+            "name": "数据测试"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 63,
+            "end_pos": 68,
+            "name": "初始作战能力"
+        }
+    ],
+    "validate_V2_22.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 10,
+            "end_pos": 34,
+            "name": "-84n[SPACE]“鱼叉[SPACE]”blockⅱ空射型反舰巡航导弹"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 37,
+            "end_pos": 54,
+            "name": "实弹试验[SPACE]“鱼叉[SPACE]”blockⅱ导弹"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 56,
+            "end_pos": 77,
+            "name": "agm-84d[SPACE]“鱼叉[SPACE]”blockⅰc导弹"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 87,
+            "end_pos": 90,
+            "name": "网络使能"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 92,
+            "end_pos": 100,
+            "name": "空射型反舰巡航导弹"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 109,
+            "end_pos": 112,
+            "name": "更新数据"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 117,
+            "end_pos": 122,
+            "name": "海上移动目标"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 124,
+            "end_pos": 125,
+            "name": "瞄准"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 127,
+            "end_pos": 130,
+            "name": "打击能力"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 156,
+            "end_pos": 168,
+            "name": "p-8a[SPACE]“海神[SPACE]”反潜机"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 193,
+            "end_pos": 198,
+            "name": "gps制导包"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 200,
+            "end_pos": 207,
+            "name": "新型数据链路接口"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 223,
+            "end_pos": 229,
+            "name": "抗电子干扰能力"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 243,
+            "end_pos": 266,
+            "name": "f/a-18e/f[SPACE]“超级大黄蜂[SPACE]”战机升级软件"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 268,
+            "end_pos": 271,
+            "name": "互操作性"
+        }
+    ],
+    "validate_V2_23.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 19,
+            "end_pos": 48,
+            "name": "[SPACE]“thor-m2dt[SPACE]”型北极近程防空系统拦截巡航导弹试验"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 79,
+            "end_pos": 84,
+            "name": "电子主动干扰"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 100,
+            "end_pos": 107,
+            "name": "极端气候环境试验"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 120,
+            "end_pos": 121,
+            "name": "零下"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 126,
+            "end_pos": 127,
+            "name": "环境"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 145,
+            "end_pos": 148,
+            "name": "空中目标"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 157,
+            "end_pos": 160,
+            "name": "打击距离"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 170,
+            "end_pos": 173,
+            "name": "打击高度"
+        }
+    ],
+    "validate_V2_24.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 28,
+            "end_pos": 49,
+            "name": "[SPACE]“轻型战斗直升机[SPACE]”(技术演示验证机2号)"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 77,
+            "end_pos": 84,
+            "name": "自动飞行控制系统"
+        }
+    ],
+    "validate_V2_25.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 49,
+            "end_pos": 55,
+            "name": "[SPACE]“僚机项目”"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 68,
+            "end_pos": 69,
+            "name": "士兵"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 73,
+            "end_pos": 78,
+            "name": "自主驾驶系统"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 87,
+            "end_pos": 95,
+            "name": "高机动多用途轮式车"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 109,
+            "end_pos": 112,
+            "name": "自主车辆"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 117,
+            "end_pos": 120,
+            "name": "有人车辆"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 148,
+            "end_pos": 149,
+            "name": "目标"
+        }
+    ],
+    "validate_V2_26.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 5,
+            "end_pos": 18,
+            "name": "“米格[SPACE]”-35多用途战斗机"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 38,
+            "end_pos": 42,
+            "name": "适航性认证"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 63,
+            "end_pos": 71,
+            "name": "机载无线电电子装备"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 73,
+            "end_pos": 81,
+            "name": "观测和导航综合设施"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 83,
+            "end_pos": 88,
+            "name": "雷达和发动机"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 101,
+            "end_pos": 102,
+            "name": "任务"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 104,
+            "end_pos": 107,
+            "name": "作战包线"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 109,
+            "end_pos": 112,
+            "name": "作战效率"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 119,
+            "end_pos": 122,
+            "name": "战斗应用"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 134,
+            "end_pos": 137,
+            "name": "部队试验"
+        }
+    ],
+    "validate_V2_27.json": [
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 40,
+            "end_pos": 43,
+            "name": "穿透能力"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 56,
+            "end_pos": 60,
+            "name": "坦克炮弹能"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 77,
+            "end_pos": 79,
+            "name": "装甲车"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 92,
+            "end_pos": 98,
+            "name": "t90?t72"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 100,
+            "end_pos": 101,
+            "name": "坦克"
+        }
+    ],
+    "validate_V2_28.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 1,
+            "end_pos": 9,
+            "name": "轮式货物运送系统试"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 94,
+            "end_pos": 99,
+            "name": "c-17运输"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 112,
+            "end_pos": 116,
+            "name": "6轮小推车"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 120,
+            "end_pos": 122,
+            "name": "集装箱"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 135,
+            "end_pos": 138,
+            "name": "地面部队"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 142,
+            "end_pos": 143,
+            "name": "弹药"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 145,
+            "end_pos": 147,
+            "name": "补给品"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 160,
+            "end_pos": 163,
+            "name": "低空状态"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 191,
+            "end_pos": 194,
+            "name": "地面部队"
+        }
+    ],
+    "validate_V2_29.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 43,
+            "end_pos": 50,
+            "name": "高超声速风洞设施"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 66,
+            "end_pos": 71,
+            "name": "高超声速试验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 117,
+            "end_pos": 126,
+            "name": "高超声速武器飞行试验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 131,
+            "end_pos": 134,
+            "name": "作战原型"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 140,
+            "end_pos": 143,
+            "name": "进攻能力"
+        }
+    ],
+    "validate_V2_30.json": [
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 16,
+            "end_pos": 18,
+            "name": "核弹头"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 23,
+            "end_pos": 28,
+            "name": "洲际弹道导弹"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 69,
+            "end_pos": 87,
+            "name": "rs-28[SPACE]“萨尔玛特[SPACE]”洲际弹道导弹"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 131,
+            "end_pos": 138,
+            "name": "[SPACE]“撒旦[SPACE]”导弹"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 158,
+            "end_pos": 159,
+            "name": "质量"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 172,
+            "end_pos": 174,
+            "name": "核弹头"
+        }
+    ],
+    "validate_V2_31.json": [
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 1,
+            "end_pos": 5,
+            "name": "高精确系统"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 14,
+            "end_pos": 27,
+            "name": "[SPACE]“杜香[SPACE]”新型防空导弹系统"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 40,
+            "end_pos": 54,
+            "name": "“杜香[SPACE]”新型近程防空导弹系统"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 68,
+            "end_pos": 73,
+            "name": "激光制导系统"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 81,
+            "end_pos": 90,
+            "name": "高精确?低空飞行目标"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 94,
+            "end_pos": 96,
+            "name": "无人机"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 98,
+            "end_pos": 99,
+            "name": "飞机"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 101,
+            "end_pos": 103,
+            "name": "直升机"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 105,
+            "end_pos": 108,
+            "name": "巡航导弹"
+        }
+    ],
+    "validate_V2_32.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 25,
+            "end_pos": 42,
+            "name": "远程控制f/a-18[SPACE]“超级大黄蜂”"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 50,
+            "end_pos": 55,
+            "name": "航空飞行甲板"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 78,
+            "end_pos": 81,
+            "name": "飞行试验"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 129,
+            "end_pos": 132,
+            "name": "触舰复飞"
+        }
+    ],
+    "validate_V2_33.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 5,
+            "end_pos": 9,
+            "name": "反坦克导弹"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 19,
+            "end_pos": 22,
+            "name": "打靶试验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 43,
+            "end_pos": 44,
+            "name": "坦克"
+        }
+    ],
+    "validate_V2_34.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 14,
+            "end_pos": 28,
+            "name": "打击目标再入飞行器(mirv)"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 30,
+            "end_pos": 33,
+            "name": "弹道导弹"
+        }
+    ],
+    "validate_V2_35.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 13,
+            "end_pos": 29,
+            "name": "kh-47m2“匕首”高超声速导弹"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 53,
+            "end_pos": 69,
+            "name": "[SPACE]“米格”-31bm双座远程截击机"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 101,
+            "end_pos": 109,
+            "name": "“米格”-31飞机"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 122,
+            "end_pos": 125,
+            "name": "预设阵位"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 134,
+            "end_pos": 135,
+            "name": "准确"
+        }
+    ],
+    "validate_V2_36.json": [
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 95,
+            "end_pos": 100,
+            "name": "网络防御技能"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 114,
+            "end_pos": 119,
+            "name": "网络作战挑战"
+        }
+    ],
+    "validate_V2_37.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 3,
+            "end_pos": 18,
+            "name": "agm-158c远程反舰巡航导弹"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 32,
+            "end_pos": 35,
+            "name": "飞行试验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 58,
+            "end_pos": 64,
+            "name": "b-1b轰炸机"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 107,
+            "end_pos": 120,
+            "name": "agm-158c远程反舰导弹"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 132,
+            "end_pos": 135,
+            "name": "舰队群中"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 137,
+            "end_pos": 140,
+            "name": "特定目标"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 157,
+            "end_pos": 161,
+            "name": "网络数据链"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 163,
+            "end_pos": 167,
+            "name": "gps导航"
+        }
+    ],
+    "validate_V2_38.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 7,
+            "end_pos": 19,
+            "name": "[SPACE]“斯特赖克[SPACE]”轮式装甲车"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 25,
+            "end_pos": 28,
+            "name": "激光武器"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 74,
+            "end_pos": 78,
+            "name": "光纤激光器"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 83,
+            "end_pos": 87,
+            "name": "小型无人机"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 104,
+            "end_pos": 106,
+            "name": "无人机"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 111,
+            "end_pos": 111,
+            "name": "激"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 119,
+            "end_pos": 124,
+            "name": "低空近距离范"
+        }
+    ],
+    "validate_V2_39.json": [
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 15,
+            "end_pos": 18,
+            "name": "战斗经验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 34,
+            "end_pos": 38,
+            "name": "高科技武器"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 40,
+            "end_pos": 43,
+            "name": "通信系统"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 99,
+            "end_pos": 100,
+            "name": "技术"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 102,
+            "end_pos": 103,
+            "name": "原型"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 111,
+            "end_pos": 113,
+            "name": "城市战"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 116,
+            "end_pos": 118,
+            "name": "杀伤力"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 120,
+            "end_pos": 121,
+            "name": "效率"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 123,
+            "end_pos": 125,
+            "name": "敏捷性"
+        }
+    ],
+    "validate_V2_40.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 33,
+            "end_pos": 44,
+            "name": "全球爆炸探测器(gbd)"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 78,
+            "end_pos": 83,
+            "name": "卫星生产设施"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 111,
+            "end_pos": 114,
+            "name": "有效载荷"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 116,
+            "end_pos": 121,
+            "name": "发射处理设施"
+        }
+    ],
+    "validate_V2_41.json": [
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 15,
+            "end_pos": 15,
+            "name": "核"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 19,
+            "end_pos": 33,
+            "name": "[SPACE]“巴布尔[SPACE]”-3潜射巡航导弹"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 42,
+            "end_pos": 45,
+            "name": "飞行试验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 66,
+            "end_pos": 69,
+            "name": "水下平台"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 81,
+            "end_pos": 84,
+            "name": "秘密地点"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 86,
+            "end_pos": 87,
+            "name": "目标"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 98,
+            "end_pos": 101,
+            "name": "飞行参数"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 109,
+            "end_pos": 112,
+            "name": "发射平台"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 117,
+            "end_pos": 124,
+            "name": "“水下动态平台”"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 137,
+            "end_pos": 138,
+            "name": "射程"
+        }
+    ],
+    "validate_V2_42.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 57,
+            "end_pos": 65,
+            "name": "[SPACE]”(lvc)环境"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 72,
+            "end_pos": 90,
+            "name": "p-8a[SPACE]“海神[SPACE]”反潜巡逻机任务系统"
+        }
+    ],
+    "validate_V2_43.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 49,
+            "end_pos": 54,
+            "name": "导弹预警系统"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 94,
+            "end_pos": 99,
+            "name": "导弹预警卫星"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 133,
+            "end_pos": 136,
+            "name": "太空系统"
+        }
+    ],
+    "validate_V2_44.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 15,
+            "end_pos": 35,
+            "name": "gbu-53/小直径炸弹[SPACE]ⅱ(sdb[SPACE]ⅱ)"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 45,
+            "end_pos": 56,
+            "name": "网络使能精确制导滑翔弹药"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 86,
+            "end_pos": 88,
+            "name": "数据链"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 91,
+            "end_pos": 95,
+            "name": "第三方控制"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 101,
+            "end_pos": 102,
+            "name": "诱饵"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 106,
+            "end_pos": 108,
+            "name": "真目标"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 120,
+            "end_pos": 123,
+            "name": "作战模式"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 128,
+            "end_pos": 133,
+            "name": "恶劣气候条件"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 137,
+            "end_pos": 140,
+            "name": "机动目标"
+        }
+    ],
+    "validate_V2_45.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 6,
+            "end_pos": 17,
+            "name": "t300旋翼无人机主系统"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 81,
+            "end_pos": 83,
+            "name": "原型机"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 86,
+            "end_pos": 89,
+            "name": "飞行测试"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 101,
+            "end_pos": 102,
+            "name": "功能"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 104,
+            "end_pos": 107,
+            "name": "技术配置"
+        }
+    ],
+    "validate_V2_46.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 10,
+            "end_pos": 31,
+            "name": "“沿海战场侦察和分析系统[SPACE]”(cobras)"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 34,
+            "end_pos": 46,
+            "name": "“科罗拉多[SPACE]”号近海战斗舰"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 52,
+            "end_pos": 55,
+            "name": "作战试验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 61,
+            "end_pos": 74,
+            "name": "“沿海战场侦察和分析系统[SPACE]”"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 90,
+            "end_pos": 93,
+            "name": "两栖部队"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 97,
+            "end_pos": 100,
+            "name": "登陆区域"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 106,
+            "end_pos": 107,
+            "name": "水雷"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 113,
+            "end_pos": 115,
+            "name": "障碍物"
+        }
+    ],
+    "validate_V2_47.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 16,
+            "end_pos": 19,
+            "name": "威胁环境"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 23,
+            "end_pos": 29,
+            "name": "水下核攻击方案"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 53,
+            "end_pos": 55,
+            "name": "核弹头"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 57,
+            "end_pos": 67,
+            "name": "[SPACE]“三叉戟[SPACE]”[SPACE]ⅱ导弹"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 79,
+            "end_pos": 88,
+            "name": "[SPACE]”号弹道导弹核潜艇"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 108,
+            "end_pos": 123,
+            "name": "[SPACE]“三叉戟[SPACE]”ⅱd5导弹延寿计划"
+        }
+    ],
+    "validate_V2_48.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 26,
+            "end_pos": 37,
+            "name": "战略导弹防御系统反导试验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 51,
+            "end_pos": 62,
+            "name": "a-135反弹道导弹系统"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 84,
+            "end_pos": 85,
+            "name": "时间"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 89,
+            "end_pos": 92,
+            "name": "模拟靶标"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 103,
+            "end_pos": 106,
+            "name": "弹道导弹"
+        }
+    ],
+    "validate_V2_49.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 33,
+            "end_pos": 40,
+            "name": "导弹防御跟踪演习"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 49,
+            "end_pos": 64,
+            "name": "[SPACE]“萨德[SPACE]”系统软件升级3.0版"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 72,
+            "end_pos": 77,
+            "name": "[SPACE]“萨德[SPACE]”"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 79,
+            "end_pos": 87,
+            "name": "[SPACE]“爱国者[SPACE]”系统"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 91,
+            "end_pos": 94,
+            "name": "互操作性"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 114,
+            "end_pos": 131,
+            "name": "[SPACE]“萨德[SPACE]”系统an/tpy-2雷达"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 164,
+            "end_pos": 168,
+            "name": "战术数据链"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 171,
+            "end_pos": 172,
+            "name": "信息"
+        }
+    ],
+    "validate_V2_50.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 5,
+            "end_pos": 14,
+            "name": "kc-46空中加油机"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 22,
+            "end_pos": 32,
+            "name": "补充型号证书(stc)"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 34,
+            "end_pos": 39,
+            "name": "燃料输送试验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 94,
+            "end_pos": 95,
+            "name": "燃油"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 114,
+            "end_pos": 119,
+            "name": "燃油输送速率"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 128,
+            "end_pos": 133,
+            "name": "硬式空中加油"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 142,
+            "end_pos": 145,
+            "name": "加油速率"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 152,
+            "end_pos": 157,
+            "name": "翼下加油吊舱"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 159,
+            "end_pos": 165,
+            "name": "中心线加油平台"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 168,
+            "end_pos": 170,
+            "name": "加油速率"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 176,
+            "end_pos": 179,
+            "name": "小型飞机"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 191,
+            "end_pos": 192,
+            "name": "燃油"
+        }
+    ],
+    "validate_V2_51.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 20,
+            "end_pos": 24,
+            "name": "信息战部队"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 26,
+            "end_pos": 27,
+            "name": "作战"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 70,
+            "end_pos": 71,
+            "name": "信息"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 79,
+            "end_pos": 80,
+            "name": "网络"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 82,
+            "end_pos": 85,
+            "name": "信号情报"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 87,
+            "end_pos": 89,
+            "name": "电子战"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 91,
+            "end_pos": 94,
+            "name": "信息作战"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 137,
+            "end_pos": 140,
+            "name": "传统部队"
+        }
+    ],
+    "validate_V2_52.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 19,
+            "end_pos": 24,
+            "name": "高超声速武器"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 26,
+            "end_pos": 32,
+            "name": "3d打印战斗部"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 34,
+            "end_pos": 34,
+            "name": "重"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 64,
+            "end_pos": 67,
+            "name": "地下掩体"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 75,
+            "end_pos": 76,
+            "name": "地面"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 80,
+            "end_pos": 82,
+            "name": "冲击波"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 144,
+            "end_pos": 149,
+            "name": "辅助破片设计"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 151,
+            "end_pos": 154,
+            "name": "建模技术"
+        }
+    ],
+    "validate_V2_53.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 2,
+            "end_pos": 5,
+            "name": "f-35项"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 30,
+            "end_pos": 33,
+            "name": "飞行试验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 70,
+            "end_pos": 76,
+            "name": "f-35战斗机"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 78,
+            "end_pos": 81,
+            "name": "飞行试验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 104,
+            "end_pos": 107,
+            "name": "起飞架次"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 116,
+            "end_pos": 119,
+            "name": "飞行时间"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 140,
+            "end_pos": 142,
+            "name": "试验点"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 154,
+            "end_pos": 155,
+            "name": "任务"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 157,
+            "end_pos": 160,
+            "name": "效能试验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 166,
+            "end_pos": 171,
+            "name": "任务效能试验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 175,
+            "end_pos": 181,
+            "name": "f-35战斗机"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 184,
+            "end_pos": 187,
+            "name": "敌方威胁"
+        }
+    ],
+    "validate_V2_54.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 51,
+            "end_pos": 70,
+            "name": "新型[SPACE]“联合轻型战术车辆[SPACE]”(jltv)"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 103,
+            "end_pos": 106,
+            "name": "预期环境"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 109,
+            "end_pos": 113,
+            "name": "作战有效性"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 115,
+            "end_pos": 117,
+            "name": "适用性"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 119,
+            "end_pos": 122,
+            "name": "生存能力"
+        }
+    ],
+    "validate_V2_55.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 39,
+            "end_pos": 48,
+            "name": "b61-12重力炸弹"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 52,
+            "end_pos": 59,
+            "name": "非核系统飞行试验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 94,
+            "end_pos": 106,
+            "name": "b-2a[SPACE]“幽灵[SPACE]”轰炸机"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 113,
+            "end_pos": 124,
+            "name": "b61-12非核试验组件"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 141,
+            "end_pos": 143,
+            "name": "炸弹组"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 153,
+            "end_pos": 159,
+            "name": "尾翼组件工具包"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 187,
+            "end_pos": 201,
+            "name": "b61-12端对端质量鉴定试验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 226,
+            "end_pos": 227,
+            "name": "系统"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 248,
+            "end_pos": 251,
+            "name": "安全要求"
+        }
+    ],
+    "validate_V2_56.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 12,
+            "end_pos": 25,
+            "name": "c-130h“大力神”运输机"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 30,
+            "end_pos": 33,
+            "name": "飞行试验"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 42,
+            "end_pos": 45,
+            "name": "系统性能"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 49,
+            "end_pos": 52,
+            "name": "操作模式"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 56,
+            "end_pos": 59,
+            "name": "飞行高度"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 61,
+            "end_pos": 64,
+            "name": "飞行条件"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 67,
+            "end_pos": 70,
+            "name": "飞行状态"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 74,
+            "end_pos": 76,
+            "name": "全天候"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 84,
+            "end_pos": 87,
+            "name": "实时视频"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 91,
+            "end_pos": 95,
+            "name": "平视显示器"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 100,
+            "end_pos": 101,
+            "name": "二维"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 110,
+            "end_pos": 110,
+            "name": "真"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 116,
+            "end_pos": 122,
+            "name": "飞行和导航数据"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 127,
+            "end_pos": 128,
+            "name": "退化"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 130,
+            "end_pos": 137,
+            "name": "目视着陆应用功能"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 139,
+            "end_pos": 144,
+            "name": "头部跟踪功能"
+        }
+    ],
+    "validate_V2_57.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 30,
+            "end_pos": 35,
+            "name": "硫磺石”导弹"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 39,
+            "end_pos": 45,
+            "name": "“台风”战斗机"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 54,
+            "end_pos": 57,
+            "name": "实弹试射"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 71,
+            "end_pos": 74,
+            "name": "作战能力"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 93,
+            "end_pos": 95,
+            "name": "增强包"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 97,
+            "end_pos": 101,
+            "name": "(p3e)"
+        }
+    ],
+    "validate_V2_58.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 5,
+            "end_pos": 19,
+            "name": "新型航空母舰“杰拉德.福特”号"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 37,
+            "end_pos": 41,
+            "name": "固定翼飞机"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 43,
+            "end_pos": 46,
+            "name": "电磁弹射"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 48,
+            "end_pos": 53,
+            "name": "拦阻着舰试验"
+        }
+    ],
+    "validate_V2_59.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 35,
+            "end_pos": 42,
+            "name": "kc-46加油机"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 44,
+            "end_pos": 47,
+            "name": "电磁试验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 55,
+            "end_pos": 56,
+            "name": "雷达"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 58,
+            "end_pos": 61,
+            "name": "无线电塔"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 65,
+            "end_pos": 66,
+            "name": "系统"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 70,
+            "end_pos": 72,
+            "name": "电磁场"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 74,
+            "end_pos": 75,
+            "name": "安全"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 98,
+            "end_pos": 110,
+            "name": "电磁脉冲与电磁辐射设施平台"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 125,
+            "end_pos": 128,
+            "name": "消声设施"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 138,
+            "end_pos": 144,
+            "name": "kc-46项目"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 150,
+            "end_pos": 158,
+            "name": "低速率初始生产飞机"
+        }
+    ],
+    "validate_V2_60.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 11,
+            "end_pos": 19,
+            "name": "舰载机海上弹射试验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 27,
+            "end_pos": 35,
+            "name": "“福特”号航空母舰"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 40,
+            "end_pos": 43,
+            "name": "恢复测试"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 49,
+            "end_pos": 58,
+            "name": "通用原子电磁弹射系统"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 63,
+            "end_pos": 66,
+            "name": "制动系统"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 71,
+            "end_pos": 87,
+            "name": "f/a-18f“超级大黄蜂”战斗机"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 127,
+            "end_pos": 130,
+            "name": "制动系统"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 166,
+            "end_pos": 169,
+            "name": "陆基试验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 189,
+            "end_pos": 196,
+            "name": "福特级空气翼模型"
+        }
+    ],
+    "validate_V2_61.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 48,
+            "end_pos": 55,
+            "name": "柴油发动机地面试验"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 60,
+            "end_pos": 63,
+            "name": "军用飞机"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 69,
+            "end_pos": 72,
+            "name": "飞行任务"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 74,
+            "end_pos": 77,
+            "name": "后勤负担"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 94,
+            "end_pos": 95,
+            "name": "有人"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 97,
+            "end_pos": 100,
+            "name": "无人飞机"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 106,
+            "end_pos": 108,
+            "name": "内燃机"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 113,
+            "end_pos": 116,
+            "name": "液体冷却"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 120,
+            "end_pos": 121,
+            "name": "复合"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 123,
+            "end_pos": 124,
+            "name": "铝制"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 126,
+            "end_pos": 128,
+            "name": "螺旋桨"
+        }
+    ],
+    "validate_V2_62.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 15,
+            "end_pos": 33,
+            "name": "“圣安东尼奥”级两栖运输舰“波特兰”号"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 58,
+            "end_pos": 63,
+            "name": "海上验收试验"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 83,
+            "end_pos": 84,
+            "name": "转向"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 86,
+            "end_pos": 90,
+            "name": "探测与交战"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 92,
+            "end_pos": 97,
+            "name": "压载/卸压载"
+        }
+    ],
+    "validate_V2_63.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 6,
+            "end_pos": 18,
+            "name": "f-35“adir”战斗机"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 36,
+            "end_pos": 41,
+            "name": "空中加油试验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 45,
+            "end_pos": 50,
+            "name": "隐身战斗机集"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 83,
+            "end_pos": 89,
+            "name": "“绿巨人”中队"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 124,
+            "end_pos": 127,
+            "name": "飞行品质"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 129,
+            "end_pos": 132,
+            "name": "专业分工"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 136,
+            "end_pos": 138,
+            "name": "全天候"
+        }
+    ],
+    "validate_V2_64.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 14,
+            "end_pos": 30,
+            "name": "“独立”级近海战斗舰“科罗纳多”号"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 51,
+            "end_pos": 75,
+            "name": "rgm-84d[SPACE]“鱼叉”[SPACE]block[SPACE]c型反舰导弹"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 82,
+            "end_pos": 88,
+            "name": "超视距水面目标"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 99,
+            "end_pos": 104,
+            "name": "潜在打击能力"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 119,
+            "end_pos": 121,
+            "name": "无人机"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 137,
+            "end_pos": 143,
+            "name": "超视距目标信息"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 145,
+            "end_pos": 150,
+            "name": "毁伤情况评估"
+        }
+    ],
+    "validate_V2_65.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 4,
+            "end_pos": 8,
+            "name": "f-35a"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 10,
+            "end_pos": 25,
+            "name": "f-35c“闪电”ⅱ型联合攻击机"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 28,
+            "end_pos": 36,
+            "name": "block3f软件"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 42,
+            "end_pos": 49,
+            "name": "武器投放精度试验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 80,
+            "end_pos": 88,
+            "name": "f-35联合攻击机"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 101,
+            "end_pos": 107,
+            "name": "空军f-35a"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 116,
+            "end_pos": 121,
+            "name": "初始作战能力"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 183,
+            "end_pos": 188,
+            "name": "投放精度试验"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 193,
+            "end_pos": 198,
+            "name": "初始作战能力"
+        }
+    ],
+    "validate_V2_66.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 31,
+            "end_pos": 43,
+            "name": "“纳格”反坦克导弹飞行试验"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 118,
+            "end_pos": 123,
+            "name": "发射装置系统"
+        }
+    ],
+    "validate_V2_67.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 4,
+            "end_pos": 8,
+            "name": "战略火箭兵"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 36,
+            "end_pos": 58,
+            "name": "井射型rs-24“亚尔斯”固体燃料洲际弹道导弹"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 66,
+            "end_pos": 69,
+            "name": "分导弹头"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 90,
+            "end_pos": 91,
+            "name": "可靠"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 103,
+            "end_pos": 106,
+            "name": "试验弹头"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 124,
+            "end_pos": 128,
+            "name": "指定区域目标"
+        }
+    ],
+    "validate_V2_68.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 33,
+            "end_pos": 45,
+            "name": "“阿斯特拉”超视距空空导弹"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 53,
+            "end_pos": 62,
+            "name": "苏-30mki战斗机"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 69,
+            "end_pos": 69,
+            "name": "研"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 80,
+            "end_pos": 83,
+            "name": "武器系统"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 102,
+            "end_pos": 108,
+            "name": "远距离打击目标"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 110,
+            "end_pos": 113,
+            "name": "中等距离"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 116,
+            "end_pos": 120,
+            "name": "高机动目标"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 132,
+            "end_pos": 133,
+            "name": "目标"
+        }
+    ],
+    "validate_V2_69.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 37,
+            "end_pos": 60,
+            "name": "“爱国者”先进能力pac-3导弹分段增强型拦截弹"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 68,
+            "end_pos": 74,
+            "name": "战术弹道导弹靶弹"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 93,
+            "end_pos": 98,
+            "name": "远程发射装置"
+        }
+    ],
+    "validate_V2_70.json": [
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 77,
+            "end_pos": 81,
+            "name": "无人机威胁"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 85,
+            "end_pos": 87,
+            "name": "杀伤能"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 97,
+            "end_pos": 99,
+            "name": "传感器"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 101,
+            "end_pos": 102,
+            "name": "软件"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 104,
+            "end_pos": 109,
+            "name": "专业光学系统"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 134,
+            "end_pos": 139,
+            "name": "波束控制技术"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 141,
+            "end_pos": 145,
+            "name": "光纤激光器"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 149,
+            "end_pos": 150,
+            "name": "翼展"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 157,
+            "end_pos": 166,
+            "name": "“放逐者”无人机系统"
+        }
+    ],
+    "validate_V2_71.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 9,
+            "end_pos": 21,
+            "name": "“萨德”(thaad)系统"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 62,
+            "end_pos": 68,
+            "name": "韩联合反导演习"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 72,
+            "end_pos": 80,
+            "name": "一体化防空反导试验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 91,
+            "end_pos": 102,
+            "name": "“宙斯盾”系统互操作性试验"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 117,
+            "end_pos": 122,
+            "name": "导弹防御系统"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 125,
+            "end_pos": 128,
+            "name": "联合作战"
+        }
+    ],
+    "validate_V2_72.json": [
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 12,
+            "end_pos": 15,
+            "name": "导弹防御"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 18,
+            "end_pos": 37,
+            "name": "低功率激光武器演示器”[SPACE]先进技术创新跨部门"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 49,
+            "end_pos": 53,
+            "name": "无人机平台"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 65,
+            "end_pos": 67,
+            "name": "激光器"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 77,
+            "end_pos": 83,
+            "name": "“鬼眼”无人机"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 85,
+            "end_pos": 95,
+            "name": "mq-9“死神”无人机"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 138,
+            "end_pos": 141,
+            "name": "飞行试验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 152,
+            "end_pos": 155,
+            "name": "验证试验"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 175,
+            "end_pos": 176,
+            "name": "高空"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 178,
+            "end_pos": 185,
+            "name": "长航时无人机平台"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 187,
+            "end_pos": 190,
+            "name": "激光武器"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 201,
+            "end_pos": 206,
+            "name": "洲际弹道导弹"
+        }
+    ],
+    "validate_V2_73.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 7,
+            "end_pos": 12,
+            "name": "现役反导系统"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 21,
+            "end_pos": 26,
+            "name": "新型反导系统"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 33,
+            "end_pos": 36,
+            "name": "反导能力"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 57,
+            "end_pos": 61,
+            "name": "反导拦截弹"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 70,
+            "end_pos": 72,
+            "name": "空天军"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 76,
+            "end_pos": 80,
+            "name": "反导拦截弹"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 82,
+            "end_pos": 87,
+            "name": "战术技术性能"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 96,
+            "end_pos": 99,
+            "name": "工作能力"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 109,
+            "end_pos": 112,
+            "name": "使用寿命"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 126,
+            "end_pos": 134,
+            "name": "a-235反导系统"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 136,
+            "end_pos": 140,
+            "name": "拦截弹测试"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 147,
+            "end_pos": 150,
+            "name": "反导系统"
+        }
+    ],
+    "validate_V2_74.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 5,
+            "end_pos": 18,
+            "name": "首长司令部联合反导计算机演习"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 51,
+            "end_pos": 54,
+            "name": "“空天安"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 67,
+            "end_pos": 68,
+            "name": "俄中"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 73,
+            "end_pos": 82,
+            "name": "防空反导联合作战行动"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 88,
+            "end_pos": 93,
+            "name": "两国领土安全"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 95,
+            "end_pos": 98,
+            "name": "弹道导弹"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 100,
+            "end_pos": 107,
+            "name": "巡航导弹袭击能力"
+        }
+    ],
+    "validate_V2_75.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 8,
+            "end_pos": 11,
+            "name": "激光武器"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 36,
+            "end_pos": 41,
+            "name": "近地轨道卫星"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 47,
+            "end_pos": 50,
+            "name": "作战目标"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 52,
+            "end_pos": 57,
+            "name": "机载激光武器"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 64,
+            "end_pos": 69,
+            "name": "a-60战机"
+        }
+    ],
+    "validate_V2_76.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 3,
+            "end_pos": 9,
+            "name": "“大卫投石器”"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 43,
+            "end_pos": 54,
+            "name": "“大卫投石器”系统关键组件"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 75,
+            "end_pos": 78,
+            "name": "集成测试"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 86,
+            "end_pos": 91,
+            "name": "初始作战能力"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 96,
+            "end_pos": 102,
+            "name": "“魔棍”拦截弹"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 117,
+            "end_pos": 118,
+            "name": "算法"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 120,
+            "end_pos": 121,
+            "name": "软件"
+        }
+    ],
+    "validate_V2_77.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 13,
+            "end_pos": 18,
+            "name": "“铁穹”系统"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 34,
+            "end_pos": 42,
+            "name": "“铁穹”系统导弹连"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 45,
+            "end_pos": 50,
+            "name": "新型软件模块"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 82,
+            "end_pos": 85,
+            "name": "防空任务"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 97,
+            "end_pos": 98,
+            "name": "威胁"
+        }
+    ],
+    "validate_V2_78.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 11,
+            "end_pos": 26,
+            "name": "“标准-3”block[SPACE]2a导弹"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 63,
+            "end_pos": 69,
+            "name": "新型导弹驱逐舰"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 72,
+            "end_pos": 83,
+            "name": "“宙斯盾”基线9作战系统"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 116,
+            "end_pos": 124,
+            "name": "“爱国者-3”系统"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 136,
+            "end_pos": 141,
+            "name": "导弹防御能力"
+        }
+    ],
+    "validate_V2_79.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 14,
+            "end_pos": 25,
+            "name": "弹道导弹防御系统拦截试验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 33,
+            "end_pos": 45,
+            "name": "“先进防空导弹”(aad)"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 61,
+            "end_pos": 63,
+            "name": "发射架"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 76,
+            "end_pos": 86,
+            "name": "“丹努什”弹道导弹靶弹"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 111,
+            "end_pos": 123,
+            "name": "“大地防空导弹”(pad)"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 162,
+            "end_pos": 175,
+            "name": "“大地防御拦截弹”(pdv)"
+        }
+    ],
+    "validate_V2_80.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 31,
+            "end_pos": 46,
+            "name": "“韩国导弹防御”(kamd)体系"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 54,
+            "end_pos": 70,
+            "name": "“中程地空导弹”(m-sam)系统"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 72,
+            "end_pos": 88,
+            "name": "“远程地空导弹”(l-sam)系统"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 90,
+            "end_pos": 98,
+            "name": "美国“爱国者”系统"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 100,
+            "end_pos": 103,
+            "name": "预警雷达"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 117,
+            "end_pos": 131,
+            "name": "“世宗大王”级“宙斯盾”驱逐舰"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 136,
+            "end_pos": 141,
+            "name": "垂直发射系统"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 148,
+            "end_pos": 153,
+            "name": "“标准-3”"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 166,
+            "end_pos": 166,
+            "name": "导"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 168,
+            "end_pos": 171,
+            "name": "防御能力"
+        }
+    ],
+    "validate_V2_81.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 8,
+            "end_pos": 10,
+            "name": "巡洋舰"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 12,
+            "end_pos": 14,
+            "name": "驱逐舰"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 19,
+            "end_pos": 29,
+            "name": "“宙斯盾”舰载作战系统"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 36,
+            "end_pos": 38,
+            "name": "计算机"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 40,
+            "end_pos": 41,
+            "name": "软件"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 43,
+            "end_pos": 45,
+            "name": "显示器"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 47,
+            "end_pos": 52,
+            "name": "武器发射系统"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 64,
+            "end_pos": 69,
+            "name": "“宙斯盾”舰"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 111,
+            "end_pos": 128,
+            "name": "“提康德罗加”级巡洋舰(cg-47)"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 130,
+            "end_pos": 148,
+            "name": "“阿利·伯克”级驱逐舰(ddg-51)"
+        }
+    ],
+    "validate_V2_82.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 4,
+            "end_pos": 18,
+            "name": "“地基中段防御”(gmd)系统"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 20,
+            "end_pos": 31,
+            "name": "“地基拦截弹”(gbi)"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 54,
+            "end_pos": 65,
+            "name": "大气层外杀伤器(ekv)"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 82,
+            "end_pos": 87,
+            "name": "控制飞行试验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 92,
+            "end_pos": 114,
+            "name": "“能力增强-2”(ce-2)型ekv姿轨控系统"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 132,
+            "end_pos": 142,
+            "name": "空射型中程弹道导弹靶弹"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 156,
+            "end_pos": 161,
+            "name": "对抗措施目标"
+        }
+    ],
+    "validate_V2_83.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 24,
+            "end_pos": 43,
+            "name": "“提康德罗加”级巡洋舰(cg47~73)"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 65,
+            "end_pos": 82,
+            "name": "“阿利·伯克”级驱逐舰(ddg-51"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 91,
+            "end_pos": 102,
+            "name": "flight[SPACE]i/ii型"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 136,
+            "end_pos": 140,
+            "name": "直升机机库"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 197,
+            "end_pos": 209,
+            "name": "防空反导雷达(spy-6)"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 215,
+            "end_pos": 220,
+            "name": "“宙斯盾”舰"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 222,
+            "end_pos": 226,
+            "name": "spy-1"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 253,
+            "end_pos": 259,
+            "name": "“朱姆沃尔特”"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 286,
+            "end_pos": 292,
+            "name": "“宙斯盾”系统"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 297,
+            "end_pos": 304,
+            "name": "弹道导弹防御能力"
+        }
+    ],
+    "validate_V2_84.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 1,
+            "end_pos": 13,
+            "name": "“宙斯盾”弹道导弹防御系统"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 24,
+            "end_pos": 30,
+            "name": "战区级弹道导弹"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 33,
+            "end_pos": 40,
+            "name": "短程(srbm)"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 42,
+            "end_pos": 50,
+            "name": "准中程(mrbm)"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 52,
+            "end_pos": 63,
+            "name": "中程弹道导弹(irbm)"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 112,
+            "end_pos": 117,
+            "name": "洲际导弹导弹"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 119,
+            "end_pos": 122,
+            "name": "防御系统"
+        }
+    ],
+    "validate_V2_85.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 1,
+            "end_pos": 6,
+            "name": "“宙斯盾”舰"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 10,
+            "end_pos": 13,
+            "name": "弹道导弹"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 17,
+            "end_pos": 20,
+            "name": "拦截导弹"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 23,
+            "end_pos": 34,
+            "name": "“标准”-3(sm-3)"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 36,
+            "end_pos": 47,
+            "name": "“标准”-2(sm-2)"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 50,
+            "end_pos": 61,
+            "name": "“标准”-6(sm-6)"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 65,
+            "end_pos": 77,
+            "name": "“宙斯盾”弹道导弹防御系统"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 81,
+            "end_pos": 99,
+            "name": "“标准”-3block[SPACE]iia拦截导弹"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 128,
+            "end_pos": 135,
+            "name": "洲际弹道导弹拦截"
+        }
+    ],
+    "validate_V2_86.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 1,
+            "end_pos": 6,
+            "name": "“标准”-3"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 10,
+            "end_pos": 19,
+            "name": "大气层外拦截飞行中段"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 23,
+            "end_pos": 26,
+            "name": "弹道导弹"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 86,
+            "end_pos": 93,
+            "name": "“标准”-3导弹"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 98,
+            "end_pos": 105,
+            "name": "block[SPACE]ia"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 107,
+            "end_pos": 114,
+            "name": "block[SPACE]ib"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 127,
+            "end_pos": 136,
+            "name": "block[SPACE]iia型"
+        }
+    ],
+    "validate_V2_87.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 11,
+            "end_pos": 18,
+            "name": "“标准”-3导弹"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 20,
+            "end_pos": 22,
+            "name": "导引头"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 24,
+            "end_pos": 28,
+            "name": "信号处理器"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 32,
+            "end_pos": 35,
+            "name": "运动轨迹"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 37,
+            "end_pos": 45,
+            "name": "转向/高度控制系统"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 72,
+            "end_pos": 75,
+            "name": "助推段直径"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 90,
+            "end_pos": 93,
+            "name": "弹体直径"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 112,
+            "end_pos": 113,
+            "name": "射程"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 120,
+            "end_pos": 121,
+            "name": "射高"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 130,
+            "end_pos": 131,
+            "name": "速度"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 143,
+            "end_pos": 149,
+            "name": "中近程弹道导弹"
+        }
+    ],
+    "validate_V2_88.json": [
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 3,
+            "end_pos": 20,
+            "name": "block[SPACE]iia型“标准”-3导弹直径"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 26,
+            "end_pos": 28,
+            "name": "发动机"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 35,
+            "end_pos": 36,
+            "name": "射程"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 38,
+            "end_pos": 39,
+            "name": "射高"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 60,
+            "end_pos": 61,
+            "name": "速度"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 76,
+            "end_pos": 78,
+            "name": "中远程"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 81,
+            "end_pos": 86,
+            "name": "洲际弹道导弹"
+        }
+    ],
+    "validate_V2_89.json": [
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 24,
+            "end_pos": 25,
+            "name": "防空"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 27,
+            "end_pos": 34,
+            "name": "“标准”-2导弹"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 47,
+            "end_pos": 51,
+            "name": "杀爆战斗部"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 56,
+            "end_pos": 58,
+            "name": "大气层"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 62,
+            "end_pos": 65,
+            "name": "弹道末段"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 67,
+            "end_pos": 70,
+            "name": "弹道导弹"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 101,
+            "end_pos": 110,
+            "name": "“标准”-6防空导弹"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 136,
+            "end_pos": 139,
+            "name": "反导作战"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 146,
+            "end_pos": 154,
+            "name": "美海军大型水面舰艇"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 156,
+            "end_pos": 161,
+            "name": "反舰弹道导弹"
+        }
+    ],
+    "validate_V2_90.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 2,
+            "end_pos": 13,
+            "name": "宙斯盾”弹道导弹防御系统"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 16,
+            "end_pos": 23,
+            "name": "“标准”-3导弹"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 30,
+            "end_pos": 33,
+            "name": "拦截试验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 52,
+            "end_pos": 57,
+            "name": "“宙斯盾”舰"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 69,
+            "end_pos": 77,
+            "name": "“宙斯盾”岸基系统"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 93,
+            "end_pos": 103,
+            "name": "”-2block[SPACE]iv"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 105,
+            "end_pos": 110,
+            "name": "“标准”-6"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 116,
+            "end_pos": 119,
+            "name": "大气层内"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 199,
+            "end_pos": 202,
+            "name": "监视卫星"
+        }
+    ],
+    "validate_V2_91.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 1,
+            "end_pos": 15,
+            "name": "对地攻击巡航导弹(lacms)"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 17,
+            "end_pos": 24,
+            "name": "高效军事打击武器"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 40,
+            "end_pos": 42,
+            "name": "亚音速"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 54,
+            "end_pos": 56,
+            "name": "超音速"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 67,
+            "end_pos": 70,
+            "name": "高超声速"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 82,
+            "end_pos": 83,
+            "name": "贴地"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 97,
+            "end_pos": 98,
+            "name": "飞机"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 100,
+            "end_pos": 101,
+            "name": "地面"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 103,
+            "end_pos": 106,
+            "name": "海军平台"
+        }
+    ],
+    "validate_V2_92.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 9,
+            "end_pos": 12,
+            "name": "弹道导弹"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 14,
+            "end_pos": 17,
+            "name": "巡航导弹"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 31,
+            "end_pos": 45,
+            "name": "高超声速滑翔飞行器(hgvs)"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 58,
+            "end_pos": 60,
+            "name": "超声速"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 80,
+            "end_pos": 86,
+            "name": "大型火箭助推器"
+        }
+    ],
+    "validate_V2_93.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 2,
+            "end_pos": 12,
+            "name": "通过导弹防御系统地面试验"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 25,
+            "end_pos": 37,
+            "name": "通信系统数据终端(idt)"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 41,
+            "end_pos": 45,
+            "name": "gmd系统"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 52,
+            "end_pos": 55,
+            "name": "火控节点"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 57,
+            "end_pos": 59,
+            "name": "ekv"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 82,
+            "end_pos": 83,
+            "name": "数据"
+        }
+    ],
+    "validate_V2_94.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 1,
+            "end_pos": 4,
+            "name": "弹道导弹"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 6,
+            "end_pos": 9,
+            "name": "巡航导弹"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 13,
+            "end_pos": 14,
+            "name": "常规"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 16,
+            "end_pos": 20,
+            "name": "非常规弹头"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 28,
+            "end_pos": 29,
+            "name": "弹药"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 35,
+            "end_pos": 37,
+            "name": "杀伤效"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 48,
+            "end_pos": 51,
+            "name": "核?生物"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 53,
+            "end_pos": 54,
+            "name": "化学"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 56,
+            "end_pos": 63,
+            "name": "大规模杀伤性弹头"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 70,
+            "end_pos": 71,
+            "name": "设备"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 75,
+            "end_pos": 79,
+            "name": "非致命弹头"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 96,
+            "end_pos": 97,
+            "name": "弹头"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 101,
+            "end_pos": 104,
+            "name": "小型炸弹"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 109,
+            "end_pos": 110,
+            "name": "高度"
+        }
+    ],
+    "validate_V2_95.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 5,
+            "end_pos": 17,
+            "name": "“宙斯盾”基线9.c1系统"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 21,
+            "end_pos": 23,
+            "name": "大气层"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 26,
+            "end_pos": 33,
+            "name": "复杂中程弹道导弹"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 45,
+            "end_pos": 62,
+            "name": "“标准-6”导弹末段拦截中程弹道导弹"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 88,
+            "end_pos": 95,
+            "name": "“标准-3”导弹"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 118,
+            "end_pos": 121,
+            "name": "中段拦截"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 125,
+            "end_pos": 129,
+            "name": "实战稳定性"
+        }
+    ],
+    "validate_V2_96.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 12,
+            "end_pos": 26,
+            "name": "mk136第三级火箭发动机喷嘴"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 28,
+            "end_pos": 43,
+            "name": "“标准-3”block[SPACE]1b导弹"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 50,
+            "end_pos": 55,
+            "name": "控制飞行试验"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 77,
+            "end_pos": 80,
+            "name": "飞行场景"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 90,
+            "end_pos": 93,
+            "name": "实战环境"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 96,
+            "end_pos": 98,
+            "name": "可靠性"
+        }
+    ],
+    "validate_V2_97.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 4,
+            "end_pos": 10,
+            "name": "“爱国者”系统"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 12,
+            "end_pos": 13,
+            "name": "飞机"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 19,
+            "end_pos": 22,
+            "name": "巡航导弹"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 24,
+            "end_pos": 27,
+            "name": "弹道导弹"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 31,
+            "end_pos": 32,
+            "name": "威胁"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 34,
+            "end_pos": 37,
+            "name": "作战能力"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 42,
+            "end_pos": 48,
+            "name": "“爱国者”系统"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 50,
+            "end_pos": 51,
+            "name": "导弹"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 53,
+            "end_pos": 54,
+            "name": "雷达"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 74,
+            "end_pos": 85,
+            "name": "“爱国者-3”mse导弹"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 88,
+            "end_pos": 93,
+            "name": "初始作战能力"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 100,
+            "end_pos": 104,
+            "name": "“爱国者”"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 106,
+            "end_pos": 111,
+            "name": "“萨德”系统"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 114,
+            "end_pos": 117,
+            "name": "火力缝隙"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 120,
+            "end_pos": 121,
+            "name": "雷达"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 130,
+            "end_pos": 132,
+            "name": "氮化[UNK]"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 134,
+            "end_pos": 142,
+            "name": "有源电扫相控阵雷达"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 149,
+            "end_pos": 156,
+            "name": "360°探测能力"
+        }
+    ],
+    "validate_V2_98.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 2,
+            "end_pos": 8,
+            "name": "“爱国者”系统"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 19,
+            "end_pos": 27,
+            "name": "pdb-8软件系统"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 34,
+            "end_pos": 45,
+            "name": "“爱国者”系统反弹道导弹"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 48,
+            "end_pos": 54,
+            "name": "巡航导弹拦截作战"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 68,
+            "end_pos": 69,
+            "name": "潜在"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 71,
+            "end_pos": 72,
+            "name": "敌人"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 87,
+            "end_pos": 87,
+            "name": "“"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 97,
+            "end_pos": 102,
+            "name": "密码现代化工具"
+        },
+        {
+            "label_type": "系统组成",
+            "overlap": 0,
+            "start_pos": 110,
+            "end_pos": 118,
+            "name": "通信和数据存储单元"
+        }
+    ],
+    "validate_V2_99.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 3,
+            "end_pos": 8,
+            "name": "高超声速武器"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 24,
+            "end_pos": 37,
+            "name": "远程精确火力(lrpf)项目"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 64,
+            "end_pos": 69,
+            "name": "lrhw项目"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 89,
+            "end_pos": 95,
+            "name": "全系统飞行试验"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 127,
+            "end_pos": 127,
+            "name": "海"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 129,
+            "end_pos": 129,
+            "name": "陆"
+        },
+        {
+            "label_type": "任务场景",
+            "overlap": 0,
+            "start_pos": 131,
+            "end_pos": 131,
+            "name": "空"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 137,
+            "end_pos": 141,
+            "name": "滑翔飞行器"
+        }
+    ],
+    "validate_V2_100.json": [
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 1,
+            "end_pos": 14,
+            "name": "“天基红外系统”(sbirs"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 17,
+            "end_pos": 33,
+            "name": "新型地面系统block[SPACE]10增量2"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 50,
+            "end_pos": 64,
+            "name": "“国防支援计划”(dsp)卫星"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 66,
+            "end_pos": 78,
+            "name": "sbirs地球同步轨道卫星"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 85,
+            "end_pos": 91,
+            "name": "大椭圆轨道载荷"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 97,
+            "end_pos": 105,
+            "name": "预警卫星星座/载荷"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 131,
+            "end_pos": 134,
+            "name": "操作控制"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 140,
+            "end_pos": 146,
+            "name": "主要任务控制站"
+        },
+        {
+            "label_type": "试验要素",
+            "overlap": 0,
+            "start_pos": 150,
+            "end_pos": 154,
+            "name": "备份控制站"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 162,
+            "end_pos": 163,
+            "name": "流程"
+        },
+        {
+            "label_type": "性能指标",
+            "overlap": 0,
+            "start_pos": 167,
+            "end_pos": 170,
+            "name": "运行效率"
+        }
+    ]
+}
